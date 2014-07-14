@@ -1,0 +1,17 @@
+apply plugin: 'android'
+
+dependencies {
+    compile 'com.google.android:support-v4:r7'
+    compile project(':libprojects:KiipSDK')
+    compile project(':libprojects:BaseKiipUtils')
+}
+
+android {
+    compileSdkVersion 17
+    buildToolsVersion = 17
+
+    defaultConfig {
+        minSdkVersion 9
+        targetSdkVersion 17
+    }
+}

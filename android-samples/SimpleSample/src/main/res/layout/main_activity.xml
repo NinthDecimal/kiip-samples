@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical" >
+
+    <EditText android:id="@+id/moment_id"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="moment_id"
+              android:singleLine="true"
+        />
+
+    <EditText android:id="@+id/moment_value"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="moment_value (double)"
+              android:singleLine="true"
+        />
+
+    <Button android:id="@+id/btn_moment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Moment"
+        />
+
+    <Button android:id="@+id/btn_promo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Promo"
+        />
+
+    <Button android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Activity"
+        />
+
+</LinearLayout>

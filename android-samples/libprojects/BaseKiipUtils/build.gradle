@@ -1,0 +1,16 @@
+apply plugin: 'android-library'
+
+dependencies {
+    compile 'com.google.android:support-v4:r7'
+    compile project(':libprojects:KiipSDK')
+}
+
+android {
+    compileSdkVersion 17
+    buildToolsVersion "17.0.0"
+
+    defaultConfig {
+        minSdkVersion 9
+        targetSdkVersion 17
+    }
+}

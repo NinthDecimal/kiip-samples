@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.kiip.customsample.BaseNotificationView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/custom_notification_height"
+    android:minWidth="@dimen/custom_notification_width"
+    android:background="@drawable/dialog_full_holo_light"
+    android:padding="12dp"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/notification_base" />
+
+</me.kiip.customsample.BaseNotificationView>
