@@ -1,0 +1,17 @@
+//
+// Prefix header for all source files of the 'SimpleSample' target in the 'SimpleSample' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#define KP_APP_KEY    @"71ed0718bd1107f14e26755fbeb12a5a"
+#define KP_APP_SECRET @"e7d9f90581d96d72e05b9bf7d50e7879"
