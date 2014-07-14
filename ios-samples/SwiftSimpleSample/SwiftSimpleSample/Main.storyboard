@@ -48,6 +48,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="deviceLabel" destination="O1A-BL-LwL" id="RLI-7e-4h4"/>
                         <outlet property="momentIdField" destination="ugP-tU-7bz" id="i4g-fp-poi"/>
                         <outlet property="momentValueField" destination="Hs3-FH-zN5" id="9Xk-gb-8y3"/>
                         <outlet property="saveMoment" destination="zT4-HD-JUO" id="zCz-Lp-qbv"/>

@@ -12,8 +12,8 @@ class AppDelegate: NSObject, UIApplicationDelegate, KiipDelegate {
     // MARK: Properties
 
     var window: UIWindow?
-    let KP_APP_KEY = "x"
-    let KP_APP_SECRET = "x"
+    let KP_APP_KEY = "3b46e5f42299f1697193bb843ed8dbf4"
+    let KP_APP_SECRET = "90c4f68ebb4817b3edf24799b04df22c"
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary) -> Bool {
         // Override point for customization after application launch.

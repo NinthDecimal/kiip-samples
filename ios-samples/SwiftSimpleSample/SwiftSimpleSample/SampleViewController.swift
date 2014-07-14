@@ -29,7 +29,7 @@ class SampleViewController: UIViewController, UITextFieldDelegate {
 
         self.momentIdField.delegate = self
         self.momentValueField.delegate = self
-        self.saveMoment.addTarget(self, action:Selector("onClick"), forControlEvents:UIControlEvents.TouchUpInside)
+        self.saveMoment.addTarget(self, action: "onClick:", forControlEvents:UIControlEvents.TouchUpInside)
 
         
         var tapGesture = UITapGestureRecognizer(target: self, action: Selector("dismissKeyboard"))
@@ -38,7 +38,7 @@ class SampleViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: UITextFieldDelegate
     
-    func onClick(sender:AnyObject) {
+    func onClick(sender:AnyObject!) {
         // Save moment
         // http://docs.kiip.com/en/guide/android.html#getting_rewards
         if sender.isEqual(self.saveMoment) {
@@ -80,6 +80,4 @@ class SampleViewController: UIViewController, UITextFieldDelegate {
         self.momentIdField.resignFirstResponder()
         self.momentValueField.resignFirstResponder()
     }
-
-    // MARK: Actions
 }
