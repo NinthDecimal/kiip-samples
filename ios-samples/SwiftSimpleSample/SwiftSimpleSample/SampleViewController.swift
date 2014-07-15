@@ -1,10 +1,10 @@
 /*
     Copyright (C) 2014 Apple Inc. All Rights Reserved.
     See LICENSE.txt for this sample’s licensing information
-    
+
     Abstract:
     A view controller that demonstrates how to use UITextField.
-            
+
 */
 
 class SampleViewController: UIViewController, UITextFieldDelegate {
@@ -14,35 +14,35 @@ class SampleViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var momentValueField: UITextField
     @IBOutlet var saveMoment: UIButton
     @IBOutlet var deviceLabel: UILabel
+    @IBOutlet var versionHeader: UILabel
 
     // Mark: View Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // You can add your Device ID to your Developer Console to receive test rewards
         // http://app.kiip.me
         var deviceIdentifier:String = Kiip.sharedInstance().deviceIdentifier
-        println("deviceIdentifier = \(deviceIdentifier)")
         self.deviceLabel.text = "Device ID: \(deviceIdentifier)"
+        self.versionHeader.text = "Kiip v\(KPVersion)";
 
         self.momentIdField.delegate = self
         self.momentValueField.delegate = self
         self.saveMoment.addTarget(self, action: "onClick:", forControlEvents:UIControlEvents.TouchUpInside)
 
-        
         var tapGesture = UITapGestureRecognizer(target: self, action: Selector("dismissKeyboard"))
         self.view.addGestureRecognizer(tapGesture)
     }
 
     // MARK: UITextFieldDelegate
-    
+
     func onClick(sender:AnyObject!) {
 
         // http://docs.kiip.com/en/guide/ios.html#getting_rewards
         if sender.isEqual(self.saveMoment) {
             self.dismissKeyboard()
-    
+
             var momentId:String = self.momentIdField.text
             var momentValue:NSString = self.momentValueField.text
 
@@ -56,7 +56,7 @@ class SampleViewController: UIViewController, UITextFieldDelegate {
             })
         }
     }
-    
+
     func textFieldShouldReturn(textField:UITextField) -> Bool  {
         if self.momentIdField == textField {
             self.momentValueField.becomeFirstResponder()
@@ -67,7 +67,7 @@ class SampleViewController: UIViewController, UITextFieldDelegate {
 
         return false
     }
-    
+
     func dismissKeyboard() {
         self.momentIdField.resignFirstResponder()
         self.momentValueField.resignFirstResponder()
