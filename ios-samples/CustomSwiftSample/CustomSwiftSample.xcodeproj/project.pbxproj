@@ -11,7 +11,8 @@
 		152DDC041980704D0033A9AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152DDC031980704D0033A9AD /* ViewController.swift */; };
 		152DDC071980704D0033A9AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152DDC051980704D0033A9AD /* Main.storyboard */; };
 		152DDC091980704D0033A9AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 152DDC081980704D0033A9AD /* Images.xcassets */; };
-		152DDC151980704E0033A9AD /* CustomSwiftSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152DDC141980704E0033A9AD /* CustomSwiftSampleTests.swift */; };
+		152DDC20198075A70033A9AD /* KiipSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152DDC1E198075630033A9AD /* KiipSDK.framework */; };
+		152DDC22198079260033A9AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152DDC21198079260033A9AD /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,8 +33,8 @@
 		152DDC061980704D0033A9AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		152DDC081980704D0033A9AD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		152DDC0E1980704D0033A9AD /* CustomSwiftSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomSwiftSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		152DDC131980704D0033A9AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		152DDC141980704E0033A9AD /* CustomSwiftSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwiftSampleTests.swift; sourceTree = "<group>"; };
+		152DDC1E198075630033A9AD /* KiipSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KiipSDK.framework; sourceTree = "<group>"; };
+		152DDC21198079260033A9AD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				152DDC22198079260033A9AD /* UIKit.framework in Frameworks */,
+				152DDC20198075A70033A9AD /* KiipSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,8 +60,8 @@
 		152DDBF31980704D0033A9AD = {
 			isa = PBXGroup;
 			children = (
+				152DDC231980792D0033A9AD /* Frameworks */,
 				152DDBFE1980704D0033A9AD /* CustomSwiftSample */,
-				152DDC111980704D0033A9AD /* CustomSwiftSampleTests */,
 				152DDBFD1980704D0033A9AD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,21 +95,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		152DDC111980704D0033A9AD /* CustomSwiftSampleTests */ = {
+		152DDC231980792D0033A9AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				152DDC141980704E0033A9AD /* CustomSwiftSampleTests.swift */,
-				152DDC121980704D0033A9AD /* Supporting Files */,
+				152DDC21198079260033A9AD /* UIKit.framework */,
+				152DDC1E198075630033A9AD /* KiipSDK.framework */,
 			);
-			path = CustomSwiftSampleTests;
-			sourceTree = "<group>";
-		};
-		152DDC121980704D0033A9AD /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				152DDC131980704D0033A9AD /* Info.plist */,
-			);
-			name = "Supporting Files";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,7 +212,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				152DDC151980704E0033A9AD /* CustomSwiftSampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +321,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CustomSwiftSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -338,6 +336,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CustomSwiftSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -397,6 +399,7 @@
 				152DDC1A1980704E0033A9AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		152DDC1B1980704E0033A9AD /* Build configuration list for PBXNativeTarget "CustomSwiftSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +408,7 @@
 				152DDC1D1980704E0033A9AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
