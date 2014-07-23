@@ -9,9 +9,15 @@ build/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-xcuserdata
+
+xcuserdata/
+
+*.xcuserdata
 *.xccheckout
+*.xcworkspace
+*.xcworkspacedata
 *.moved-aside
+
 DerivedData
 *.hmap
 *.ipa
