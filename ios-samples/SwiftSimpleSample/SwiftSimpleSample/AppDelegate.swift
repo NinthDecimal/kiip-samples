@@ -2,9 +2,9 @@
     Copyright (C) 2014 Kiip, Inc. All Rights Reserved.
 
     Abstract:
-    
+
                 The application-specific delegate class.
-            
+
 */
 
 @UIApplicationMain
@@ -22,37 +22,37 @@ class AppDelegate: NSObject, UIApplicationDelegate, KiipDelegate {
 
         // Listen for Kiip events
         kiip.delegate = self;
-        
+
         Kiip.setSharedInstance(kiip);
 
         return true;
     }
 
     func showError(error:NSError) {
-        var alert = UIAlertView(title: "Error", message: error.localizedDescription,
-                                delegate: nil, cancelButtonTitle: "OK")
-        alert.show()
+        var alert = UIAlertController(title:"Error", message:error.localizedDescription, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+        self.window?.rootViewController.presentViewController(alert, animated: true, completion: nil)
     }
 
     func kiip(kiip:Kiip, didStartSessionWithPoptart poptart:KPPoptart, error:NSError) {
         NSLog("kiip:didStartSessionWithPoptart:%@ error:%@", poptart, error);
-    
+
         if nil != error {
             self.showError(error);
         }
-    
+
         // Since we've implemented this delegate method, Kiip will no longer show the poptart automatically
         poptart.show();
     }
-    
+
     func kiip(kiip:Kiip, didEndSessionWithError error:NSError) {
         NSLog("kiip:didEndSessionWithError:%@", error);
-    
+
         if nil != error {
             self.showError(error);
         }
     }
-    
+
     func kiip(kiip:Kiip, contentId:NSString, quantity:Int, transactionId:NSString, signature:NSString) {
 
         NSLog("kiip:didReceiveContent:%@ quantity:%d transactionId:%@ signature:%@", contentId, quantity, transactionId, signature);

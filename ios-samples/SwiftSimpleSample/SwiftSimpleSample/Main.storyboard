@@ -82,6 +82,7 @@
                         <outlet property="momentIdField" destination="ugP-tU-7bz" id="i4g-fp-poi"/>
                         <outlet property="momentValueField" destination="Hs3-FH-zN5" id="9Xk-gb-8y3"/>
                         <outlet property="saveMoment" destination="zT4-HD-JUO" id="zCz-Lp-qbv"/>
+                        <outlet property="versionHeader" destination="MjL-GI-QkD" id="6X8-Ee-avI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WSH-vE-yEv" userLabel="First Responder" sceneMemberID="firstResponder"/>
