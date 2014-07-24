@@ -11,19 +11,16 @@
 		152DDC041980704D0033A9AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152DDC031980704D0033A9AD /* ViewController.swift */; };
 		152DDC071980704D0033A9AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152DDC051980704D0033A9AD /* Main.storyboard */; };
 		152DDC091980704D0033A9AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 152DDC081980704D0033A9AD /* Images.xcassets */; };
-		152DDC20198075A70033A9AD /* KiipSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152DDC1E198075630033A9AD /* KiipSDK.framework */; };
 		152DDC22198079260033A9AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152DDC21198079260033A9AD /* UIKit.framework */; };
+		152DDC2819807BDE0033A9AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152DDC2719807BDE0033A9AD /* Foundation.framework */; };
+		152DDC2C19807C1A0033A9AD /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152DDC2B19807C1A0033A9AD /* MediaPlayer.framework */; };
+		152DDC2E19807C1E0033A9AD /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152DDC2D19807C1E0033A9AD /* PassKit.framework */; };
+		152DDC3019807C270033A9AD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152DDC2F19807C270033A9AD /* SystemConfiguration.framework */; };
+		152DDC3219807C2C0033A9AD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152DDC3119807C2C0033A9AD /* QuartzCore.framework */; };
+		152DDC3419807C350033A9AD /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152DDC3319807C350033A9AD /* CoreTelephony.framework */; };
+		1559FFF0198183F000E3A7DA /* KiipSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1559FFEF198183F000E3A7DA /* KiipSDK.framework */; };
+		1559FFF2198183F900E3A7DA /* KiipSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1559FFF1198183F900E3A7DA /* KiipSDKResources.bundle */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		152DDC0F1980704D0033A9AD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 152DDBF41980704D0033A9AD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 152DDBFB1980704D0033A9AD;
-			remoteInfo = CustomSwiftSample;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		152DDBFC1980704D0033A9AD /* CustomSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,9 +29,15 @@
 		152DDC031980704D0033A9AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		152DDC061980704D0033A9AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		152DDC081980704D0033A9AD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		152DDC0E1980704D0033A9AD /* CustomSwiftSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomSwiftSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		152DDC1E198075630033A9AD /* KiipSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KiipSDK.framework; sourceTree = "<group>"; };
 		152DDC21198079260033A9AD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		152DDC2719807BDE0033A9AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		152DDC2B19807C1A0033A9AD /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		152DDC2D19807C1E0033A9AD /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		152DDC2F19807C270033A9AD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		152DDC3119807C2C0033A9AD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		152DDC3319807C350033A9AD /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		1559FFEF198183F000E3A7DA /* KiipSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KiipSDK.framework; path = "../../../../Downloads/Kiip-iOS-SDK/KiipSDK.framework"; sourceTree = "<group>"; };
+		1559FFF1198183F900E3A7DA /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KiipSDKResources.bundle; path = "../../../../Downloads/Kiip-iOS-SDK/KiipSDK.framework/Versions/A/Resources/KiipSDKResources.bundle"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,15 +45,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				152DDC3419807C350033A9AD /* CoreTelephony.framework in Frameworks */,
+				152DDC3219807C2C0033A9AD /* QuartzCore.framework in Frameworks */,
+				152DDC3019807C270033A9AD /* SystemConfiguration.framework in Frameworks */,
+				152DDC2E19807C1E0033A9AD /* PassKit.framework in Frameworks */,
+				1559FFF0198183F000E3A7DA /* KiipSDK.framework in Frameworks */,
+				152DDC2C19807C1A0033A9AD /* MediaPlayer.framework in Frameworks */,
+				152DDC2819807BDE0033A9AD /* Foundation.framework in Frameworks */,
 				152DDC22198079260033A9AD /* UIKit.framework in Frameworks */,
-				152DDC20198075A70033A9AD /* KiipSDK.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		152DDC0B1980704D0033A9AD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,8 +62,9 @@
 		152DDBF31980704D0033A9AD = {
 			isa = PBXGroup;
 			children = (
-				152DDC231980792D0033A9AD /* Frameworks */,
+				1559FFF1198183F900E3A7DA /* KiipSDKResources.bundle */,
 				152DDBFE1980704D0033A9AD /* CustomSwiftSample */,
+				152DDC231980792D0033A9AD /* Frameworks */,
 				152DDBFD1980704D0033A9AD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				152DDBFC1980704D0033A9AD /* CustomSwiftSample.app */,
-				152DDC0E1980704D0033A9AD /* CustomSwiftSampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,8 +100,14 @@
 		152DDC231980792D0033A9AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1559FFEF198183F000E3A7DA /* KiipSDK.framework */,
+				152DDC3319807C350033A9AD /* CoreTelephony.framework */,
+				152DDC3119807C2C0033A9AD /* QuartzCore.framework */,
+				152DDC2F19807C270033A9AD /* SystemConfiguration.framework */,
+				152DDC2D19807C1E0033A9AD /* PassKit.framework */,
+				152DDC2B19807C1A0033A9AD /* MediaPlayer.framework */,
+				152DDC2719807BDE0033A9AD /* Foundation.framework */,
 				152DDC21198079260033A9AD /* UIKit.framework */,
-				152DDC1E198075630033A9AD /* KiipSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -124,24 +132,6 @@
 			productReference = 152DDBFC1980704D0033A9AD /* CustomSwiftSample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		152DDC0D1980704D0033A9AD /* CustomSwiftSampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 152DDC1B1980704E0033A9AD /* Build configuration list for PBXNativeTarget "CustomSwiftSampleTests" */;
-			buildPhases = (
-				152DDC0A1980704D0033A9AD /* Sources */,
-				152DDC0B1980704D0033A9AD /* Frameworks */,
-				152DDC0C1980704D0033A9AD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				152DDC101980704D0033A9AD /* PBXTargetDependency */,
-			);
-			name = CustomSwiftSampleTests;
-			productName = CustomSwiftSampleTests;
-			productReference = 152DDC0E1980704D0033A9AD /* CustomSwiftSampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -153,10 +143,6 @@
 				TargetAttributes = {
 					152DDBFB1980704D0033A9AD = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					152DDC0D1980704D0033A9AD = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 152DDBFB1980704D0033A9AD;
 					};
 				};
 			};
@@ -174,7 +160,6 @@
 			projectRoot = "";
 			targets = (
 				152DDBFB1980704D0033A9AD /* CustomSwiftSample */,
-				152DDC0D1980704D0033A9AD /* CustomSwiftSampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -184,15 +169,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1559FFF2198183F900E3A7DA /* KiipSDKResources.bundle in Resources */,
 				152DDC071980704D0033A9AD /* Main.storyboard in Resources */,
 				152DDC091980704D0033A9AD /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		152DDC0C1980704D0033A9AD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,22 +187,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		152DDC0A1980704D0033A9AD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		152DDC101980704D0033A9AD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 152DDBFB1980704D0033A9AD /* CustomSwiftSample */;
-			targetProxy = 152DDC0F1980704D0033A9AD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		152DDC051980704D0033A9AD /* Main.storyboard */ = {
@@ -324,6 +288,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"/Users/sahilverma/Downloads/Kiip-iOS-SDK",
 				);
 				INFOPLIST_FILE = CustomSwiftSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -339,44 +304,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"/Users/sahilverma/Downloads/Kiip-iOS-SDK",
 				);
 				INFOPLIST_FILE = CustomSwiftSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		152DDC1C1980704E0033A9AD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CustomSwiftSample.app/CustomSwiftSample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CustomSwiftSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Debug;
-		};
-		152DDC1D1980704E0033A9AD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CustomSwiftSample.app/CustomSwiftSample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CustomSwiftSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
 		};
@@ -397,15 +329,6 @@
 			buildConfigurations = (
 				152DDC191980704E0033A9AD /* Debug */,
 				152DDC1A1980704E0033A9AD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		152DDC1B1980704E0033A9AD /* Build configuration list for PBXNativeTarget "CustomSwiftSampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				152DDC1C1980704E0033A9AD /* Debug */,
-				152DDC1D1980704E0033A9AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

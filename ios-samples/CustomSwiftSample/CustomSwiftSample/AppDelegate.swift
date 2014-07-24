@@ -7,15 +7,20 @@
 //
 
 import UIKit
+import
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, KiipDelegate {
                             
     var window: UIWindow?
-
-
+    
+    let KP_APP_KEY : String = "APP_KEY_HERE"
+    let KP_APP_SECRET : String = "APP_SECRET_HERE"
+    
     func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
         // Override point for customization after application launch.
+        
+        var kiip: Kiip =
         return true
     }
 
