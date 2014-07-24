@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, KiipDelegate {
@@ -20,7 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, KiipDelegate {
     func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
         // Override point for customization after application launch.
         
-        var kiip: Kiip =
+        /* Kiip init code */
+        var kiip: Kiip = Kiip(appKey: KP_APP_KEY, andSecret:KP_APP_SECRET)
+        kiip.delegate = self
+        Kiip.setSharedInstance(kiip)
+        /* Kiip init code */
+        
         return true
     }
 

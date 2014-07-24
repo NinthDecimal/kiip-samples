@@ -38,6 +38,7 @@
 		152DDC3319807C350033A9AD /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		1559FFEF198183F000E3A7DA /* KiipSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KiipSDK.framework; path = "../../../../Downloads/Kiip-iOS-SDK/KiipSDK.framework"; sourceTree = "<group>"; };
 		1559FFF1198183F900E3A7DA /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KiipSDKResources.bundle; path = "../../../../Downloads/Kiip-iOS-SDK/KiipSDK.framework/Versions/A/Resources/KiipSDKResources.bundle"; sourceTree = "<group>"; };
+		1559FFF31981885000E3A7DA /* CustomSwiftSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomSwiftSample-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +86,7 @@
 				152DDC051980704D0033A9AD /* Main.storyboard */,
 				152DDC081980704D0033A9AD /* Images.xcassets */,
 				152DDBFF1980704D0033A9AD /* Supporting Files */,
+				1559FFF31981885000E3A7DA /* CustomSwiftSample-Bridging-Header.h */,
 			);
 			path = CustomSwiftSample;
 			sourceTree = "<group>";
@@ -293,6 +295,7 @@
 				INFOPLIST_FILE = CustomSwiftSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CustomSwiftSample/CustomSwiftSample-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -309,6 +312,7 @@
 				INFOPLIST_FILE = CustomSwiftSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CustomSwiftSample/CustomSwiftSample-Bridging-Header.h";
 			};
 			name = Release;
 		};
