@@ -13,8 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, KiipDelegate {
                             
     var window: UIWindow?
     
-    let KP_APP_KEY : String = "APP_KEY_HERE"
-    let KP_APP_SECRET : String = "APP_SECRET_HERE"
+    let KP_APP_KEY : String = "3b46e5f42299f1697193bb843ed8dbf4"
+    let KP_APP_SECRET : String = "90c4f68ebb4817b3edf24799b04df22c"
     
     func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
         // Override point for customization after application launch.
@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, KiipDelegate {
         kiip.delegate = self
         Kiip.setSharedInstance(kiip)
         /* Kiip init code */
-        
+
         return true
     }
 
