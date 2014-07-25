@@ -28,6 +28,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     /* Kiip Callback w/ integrated notification */
     var kpHandlerIntegrated : ((KPPoptart!, NSError!) -> Void)!
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -102,15 +103,9 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     //MARK: - TouchUpInside
     func saveMmtPressed(sender: UIButton!) {
 
-        if (rewardFlowType == kRewardDefault) {
-            // -- Kiip -- //
+        if (rewardFlowType == kRewardDefault || rewardFlowType == kNotificationCustom) {
             Kiip.sharedInstance().saveMoment("test", kpHandler)
         }
-
-        if (rewardFlowType == kNotificationCustom) {
-
-        }
-
         if (rewardFlowType == kNotificationIntegrated) {
 
         }
@@ -142,5 +137,4 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     func didDismissModal(modal: KPModal!) {
         // modal Dismisssed
     }
-
 }
