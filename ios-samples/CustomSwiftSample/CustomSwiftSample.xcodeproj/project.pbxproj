@@ -20,6 +20,7 @@
 		152DDC3419807C350033A9AD /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152DDC3319807C350033A9AD /* CoreTelephony.framework */; };
 		1559FFF0198183F000E3A7DA /* KiipSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1559FFEF198183F000E3A7DA /* KiipSDK.framework */; };
 		1559FFF2198183F900E3A7DA /* KiipSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1559FFF1198183F900E3A7DA /* KiipSDKResources.bundle */; };
+		1559FFF519818B4F00E3A7DA /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1559FFF419818B4F00E3A7DA /* AdSupport.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		1559FFEF198183F000E3A7DA /* KiipSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KiipSDK.framework; path = "../../../../Downloads/Kiip-iOS-SDK/KiipSDK.framework"; sourceTree = "<group>"; };
 		1559FFF1198183F900E3A7DA /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KiipSDKResources.bundle; path = "../../../../Downloads/Kiip-iOS-SDK/KiipSDK.framework/Versions/A/Resources/KiipSDKResources.bundle"; sourceTree = "<group>"; };
 		1559FFF31981885000E3A7DA /* CustomSwiftSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomSwiftSample-Bridging-Header.h"; sourceTree = "<group>"; };
+		1559FFF419818B4F00E3A7DA /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1559FFF519818B4F00E3A7DA /* AdSupport.framework in Frameworks */,
 				152DDC3419807C350033A9AD /* CoreTelephony.framework in Frameworks */,
 				152DDC3219807C2C0033A9AD /* QuartzCore.framework in Frameworks */,
 				152DDC3019807C270033A9AD /* SystemConfiguration.framework in Frameworks */,
@@ -102,6 +105,7 @@
 		152DDC231980792D0033A9AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1559FFF419818B4F00E3A7DA /* AdSupport.framework */,
 				1559FFEF198183F000E3A7DA /* KiipSDK.framework */,
 				152DDC3319807C350033A9AD /* CoreTelephony.framework */,
 				152DDC3119807C2C0033A9AD /* QuartzCore.framework */,
