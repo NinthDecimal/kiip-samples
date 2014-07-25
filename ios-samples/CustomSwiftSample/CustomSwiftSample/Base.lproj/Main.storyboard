@@ -15,8 +15,31 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CeE-Mn-TTE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
+                                <items>
+                                    <navigationItem prompt="" id="giA-Vl-oMO"/>
+                                </items>
+                            </navigationBar>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bjj-Xd-hIK">
+                                <rect key="frame" x="0.0" y="430" width="600" height="162"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CeE-Mn-TTE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Dd5-1E-g07"/>
+                            <constraint firstItem="Bjj-Xd-hIK" firstAttribute="trailing" secondItem="CeE-Mn-TTE" secondAttribute="trailing" id="GQj-fH-2Ag"/>
+                            <constraint firstItem="CeE-Mn-TTE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Lx4-Cy-DD2"/>
+                            <constraint firstItem="Bjj-Xd-hIK" firstAttribute="leading" secondItem="CeE-Mn-TTE" secondAttribute="leading" id="l64-xQ-8VV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bjj-Xd-hIK" secondAttribute="bottom" constant="8" id="sX4-jj-6RE"/>
+                            <constraint firstAttribute="trailing" secondItem="Bjj-Xd-hIK" secondAttribute="trailing" id="xQp-ST-e68"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="navBar" destination="CeE-Mn-TTE" id="XvW-0j-mQm"/>
+                        <outlet property="scrollPicker" destination="Bjj-Xd-hIK" id="var-12-8gT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
