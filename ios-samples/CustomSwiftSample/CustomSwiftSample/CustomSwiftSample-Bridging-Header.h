@@ -14,3 +14,6 @@
 
 #import <UIKit/UIKit.h>
 #import <KiipSDK/KiipSDK.h>
+
+// Only for custom notifications.
+#import <KiipSDK/KPNotificationView.h>

@@ -86,7 +86,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         return kPickerViewComponents
     }
 
-    func pickerView( pV:UIPickerView!,
+    func pickerView(pV:UIPickerView!,
         numberOfRowsInComponent component: Int) -> Int {
         return pickerDataSource.count
     }
@@ -100,14 +100,14 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         rewardFlowType = pickerDataSource[row]
     }
 
-    //MARK: - TouchUpInside
+    //MARK: - Save Moment
     func saveMmtPressed(sender: UIButton!) {
 
         if (rewardFlowType == kRewardDefault || rewardFlowType == kNotificationCustom) {
             Kiip.sharedInstance().saveMoment("test", kpHandler)
         }
         if (rewardFlowType == kNotificationIntegrated) {
-
+            Kiip.sharedInstance().saveMoment("test-integrated", kpHandlerIntegrated)
         }
     }
 
@@ -119,22 +119,27 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     //MARK: - KPNotificationDelegate
     func willShowNotification(notification: KPNotification!) {
         // will show notification
+        println("Notification#willShow")
     }
 
     func didDismissNotification(notification: KPNotification!) {
         // notification dismissed
+        println("Notification#didDismiss")
     }
 
     func didDismissNotificationWithClick(notification: KPNotification!) {
         // Notification clicked!
+        println("Notification#clicked")
     }
 
     //MARK: - KPModalDelegate
     func willPresentModal(modal: KPModal!) {
         // will Present Modal
+        println("Modal#willShow")
     }
 
     func didDismissModal(modal: KPModal!) {
         // modal Dismisssed
+        println("Modal#didDismiss")
     }
 }
