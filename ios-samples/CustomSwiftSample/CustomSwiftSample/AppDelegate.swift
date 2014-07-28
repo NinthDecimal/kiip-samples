@@ -22,9 +22,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, KiipDelegate {
         /* Kiip init code */
         var kiip: Kiip = Kiip(appKey: KP_APP_KEY, andSecret:KP_APP_SECRET)
         kiip.delegate = self
-        Kiip.setSharedInstance(kiip)
         /* Kiip init code */
 
+        /* Optional KPCustomNotificationView */
+        // kiip.notificationView = KPCustomNotificationView()
+        /* toggle Custom notification view */
+
+        Kiip.setSharedInstance(kiip)
         return true
     }
 

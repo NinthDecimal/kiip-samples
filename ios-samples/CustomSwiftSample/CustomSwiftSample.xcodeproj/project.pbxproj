@@ -21,6 +21,7 @@
 		1559FFF0198183F000E3A7DA /* KiipSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1559FFEF198183F000E3A7DA /* KiipSDK.framework */; };
 		1559FFF2198183F900E3A7DA /* KiipSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1559FFF1198183F900E3A7DA /* KiipSDKResources.bundle */; };
 		1559FFF519818B4F00E3A7DA /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1559FFF419818B4F00E3A7DA /* AdSupport.framework */; };
+		15B2C3401986E769000ED2A6 /* KPCustomNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B2C33F1986E769000ED2A6 /* KPCustomNotificationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		1559FFF1198183F900E3A7DA /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KiipSDKResources.bundle; path = "../../../../Downloads/Kiip-iOS-SDK/KiipSDK.framework/Versions/A/Resources/KiipSDKResources.bundle"; sourceTree = "<group>"; };
 		1559FFF31981885000E3A7DA /* CustomSwiftSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomSwiftSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		1559FFF419818B4F00E3A7DA /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		15B2C33F1986E769000ED2A6 /* KPCustomNotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KPCustomNotificationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			children = (
 				152DDC011980704D0033A9AD /* AppDelegate.swift */,
 				152DDC031980704D0033A9AD /* ViewController.swift */,
+				15B2C33F1986E769000ED2A6 /* KPCustomNotificationView.swift */,
 				152DDC051980704D0033A9AD /* Main.storyboard */,
 				152DDC081980704D0033A9AD /* Images.xcassets */,
 				152DDBFF1980704D0033A9AD /* Supporting Files */,
@@ -190,6 +193,7 @@
 			files = (
 				152DDC041980704D0033A9AD /* ViewController.swift in Sources */,
 				152DDC021980704D0033A9AD /* AppDelegate.swift in Sources */,
+				15B2C3401986E769000ED2A6 /* KPCustomNotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
