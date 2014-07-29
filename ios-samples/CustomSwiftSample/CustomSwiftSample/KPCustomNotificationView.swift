@@ -31,6 +31,9 @@ class KPCustomNotificationView : KPNotificationView {
     }
 
     override func didMoveToSuperview() {
+        if self.superview == nil {
+            return
+        }
         self.frame = CGRectMake(0, 0, CGRectGetWidth(self.superview.bounds), HEIGHT)
         titleRect = CGRectMake(65, 7, CGRectGetWidth(self.bounds) - 65 - 20 - 10, titleFont.lineHeight)
         messageRect = CGRectMake(65, 24, CGRectGetWidth(self.bounds) - 65 - 10, messageFont.lineHeight)
@@ -49,6 +52,7 @@ class KPCustomNotificationView : KPNotificationView {
         // Title
         var attrs = NSMutableDictionary()
         attrs.setValue(titleFont, forKey:NSFontAttributeName)
+        // TODO
         //attrs.setValue(NSLineBreakMode.ByTruncatingTail, forKey:lineBreakMode)
 
         UIColor.whiteColor().set()
