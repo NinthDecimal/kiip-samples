@@ -98,6 +98,10 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
 
     func pickerView(pickerView:UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         rewardFlowType = pickerDataSource[row]
+
+        // Custom notification settings.
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        appDelegate.toggleCustomNotification(rewardFlowType == kNotificationCustom)
     }
 
     //MARK: - Save Moment

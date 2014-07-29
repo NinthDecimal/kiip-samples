@@ -23,7 +23,7 @@ class KPCustomNotificationView : KPNotificationView {
         titleFont = UIFont(name:"HelveticaNeue-Bold", size: 12)
         messageFont = UIFont(name:"HelveticaNeue-Medium", size: 12)
         var backgroundColor = UIColor.clearColor()
-        background = UIImage()
+        background = UIImage(named:"button.png")
         titleRect = CGRect()
         messageRect = CGRect()
         super.init(frame: CGRectZero)

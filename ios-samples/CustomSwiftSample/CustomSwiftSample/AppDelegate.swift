@@ -24,9 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, KiipDelegate {
         kiip.delegate = self
         /* Kiip init code */
 
-        /* Optional KPCustomNotificationView */
+        /* Optional KPCustomNotificationView, commented out because we have a scroll picker.
+         * otherwise, you would keep this line.
+         */
         // kiip.notificationView = KPCustomNotificationView()
-        /* toggle Custom notification view */
 
         Kiip.setSharedInstance(kiip)
         return true
@@ -54,6 +55,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, KiipDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    //MARK: - Toggle defuault vs custom notification
+    func toggleCustomNotification(enabled: Bool) {
+        if enabled {
+            Kiip.sharedInstance().notificationView = KPCustomNotificationView()
+        }
+        else {
+            Kiip.sharedInstance().notificationView = nil;
+        }
+    }
 }
-

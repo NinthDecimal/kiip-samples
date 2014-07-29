@@ -22,6 +22,8 @@
 		1559FFF2198183F900E3A7DA /* KiipSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1559FFF1198183F900E3A7DA /* KiipSDKResources.bundle */; };
 		1559FFF519818B4F00E3A7DA /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1559FFF419818B4F00E3A7DA /* AdSupport.framework */; };
 		15B2C3401986E769000ED2A6 /* KPCustomNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B2C33F1986E769000ED2A6 /* KPCustomNotificationView.swift */; };
+		15B2C343198713D8000ED2A6 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 15B2C341198713D8000ED2A6 /* button.png */; };
+		15B2C344198713D8000ED2A6 /* button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15B2C342198713D8000ED2A6 /* button@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		1559FFF31981885000E3A7DA /* CustomSwiftSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomSwiftSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		1559FFF419818B4F00E3A7DA /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		15B2C33F1986E769000ED2A6 /* KPCustomNotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KPCustomNotificationView.swift; sourceTree = "<group>"; };
+		15B2C341198713D8000ED2A6 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button.png; path = ../CustomSample/CustomSample/resources/button.png; sourceTree = "<group>"; };
+		15B2C342198713D8000ED2A6 /* button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button@2x.png"; path = "../CustomSample/CustomSample/Resources/button@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +72,6 @@
 		152DDBF31980704D0033A9AD = {
 			isa = PBXGroup;
 			children = (
-				1559FFF1198183F900E3A7DA /* KiipSDKResources.bundle */,
 				152DDBFE1980704D0033A9AD /* CustomSwiftSample */,
 				152DDC231980792D0033A9AD /* Frameworks */,
 				152DDBFD1980704D0033A9AD /* Products */,
@@ -93,6 +96,7 @@
 				152DDC081980704D0033A9AD /* Images.xcassets */,
 				152DDBFF1980704D0033A9AD /* Supporting Files */,
 				1559FFF31981885000E3A7DA /* CustomSwiftSample-Bridging-Header.h */,
+				15B2C345198713DF000ED2A6 /* Resources */,
 			);
 			path = CustomSwiftSample;
 			sourceTree = "<group>";
@@ -119,6 +123,17 @@
 				152DDC21198079260033A9AD /* UIKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		15B2C345198713DF000ED2A6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1559FFF1198183F900E3A7DA /* KiipSDKResources.bundle */,
+				15B2C341198713D8000ED2A6 /* button.png */,
+				15B2C342198713D8000ED2A6 /* button@2x.png */,
+			);
+			name = Resources;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +194,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1559FFF2198183F900E3A7DA /* KiipSDKResources.bundle in Resources */,
+				15B2C343198713D8000ED2A6 /* button.png in Resources */,
+				15B2C344198713D8000ED2A6 /* button@2x.png in Resources */,
 				152DDC071980704D0033A9AD /* Main.storyboard in Resources */,
 				152DDC091980704D0033A9AD /* Images.xcassets in Resources */,
 			);
