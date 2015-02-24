@@ -1,1 +1,2 @@
-include ':SimpleSample', ':CustomSample', ':libprojects:BaseKiipUtils', ':libprojects:KiipSDK'
+include ':SimpleSample', ':CustomSample', ':BaseKiipUtils'
+project(':BaseKiipUtils').projectDir = new File('libprojects/BaseKiipUtils')

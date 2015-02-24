@@ -38,16 +38,17 @@ Notification types:
 1. Modify the `APP_KEY` and `APP_SECRET` in the project's `Application` class to your credentials, as given by the Developer Console.
 1. Compile and run
 
+**Note, this repo currently contains SDK version 2.2.0**
+
 
 ### Add Kiip to an existing project
 
 1. Create `libprojects` directory in your project
-1. Copy `libprojects/BaseKiipUtils` and `KiipSDK` to `libprojects/`
-1. Add `BaseKiipUtils` and `KiipSDK` as dependencies to your project:
+1. Copy `libprojects/BaseKiipUtils` to `libprojects/`
+1. Add `BaseKiipUtils` as a dependency to your project:
 
 	dependencies {
 	    compile project(':libprojects:BaseKiipUtils')
-	    compile project(':libprojects:KiipSDK')
 	}
 
 

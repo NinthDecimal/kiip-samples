@@ -1,17 +1,26 @@
-apply plugin: 'android'
+apply plugin: 'com.android.application'
 
 dependencies {
     compile 'com.google.android:support-v4:r7'
-    compile project(':libprojects:KiipSDK')
-    compile project(':libprojects:BaseKiipUtils')
+    compile project(':BaseKiipUtils')
 }
 
 android {
-    compileSdkVersion 17
-    buildToolsVersion "17.0.0"
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
 
     defaultConfig {
+
+        applicationId "me.kiip.customsample"
         minSdkVersion 9
-        targetSdkVersion 17
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
     }
 }
