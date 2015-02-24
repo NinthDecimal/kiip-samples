@@ -1,6 +1,3 @@
 <resources>
-
-    <string name="app_name">SimpleSample</string>
-    <string name="title_activity_sample">SampleActivity</string>
-
+    <string name="app_name">simplesample</string>
 </resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/libprojects/BaseKiipUtils/BaseKiipUtils.iml" filepath="$PROJECT_DIR$/libprojects/BaseKiipUtils/BaseKiipUtils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CustomSample/CustomSample.iml" filepath="$PROJECT_DIR$/CustomSample/CustomSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SimpleSample/SimpleSample.iml" filepath="$PROJECT_DIR$/SimpleSample/SimpleSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-samples.iml" filepath="$PROJECT_DIR$/android-samples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kiip-samples.iml" filepath="$PROJECT_DIR$/kiip-samples.iml" />
+    </modules>
+  </component>
+</project>
+
