@@ -61,19 +61,6 @@ public class MainActivity extends BaseFragmentActivity implements DialogInterfac
                 }
             }
 
-            // Show promo
-            else if (id == R.id.btn_promo) {
-                Kiip.getInstance().getPromo(MainActivity.this, new Kiip.OnPromoListener() {
-                    @Override
-                    public void onPromo(Kiip kiip, Promo promo) {
-                        Log.d(TAG, "onPromo " + promo);
-                        if (promo != null) {
-                            promo.show();
-                        }
-                    }
-                });
-            }
-
             // Start new activity
             // KiipHelper helps persist Kiip views across Activity switching
             else if (id == R.id.btn_start) {
@@ -92,7 +79,6 @@ public class MainActivity extends BaseFragmentActivity implements DialogInterfac
 
         final int[] clickables = {
                 R.id.btn_moment,
-                R.id.btn_promo,
                 R.id.btn_start
         };
         for (int id : clickables) {

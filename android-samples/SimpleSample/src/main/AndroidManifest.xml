@@ -1,8 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="me.kiip.simplesample" >
 
-    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="19" />
-
     <!-- Kiip Optional Permissions -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
@@ -11,8 +9,7 @@
     <application
         android:name=".SampleApplication"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:label="@string/app_name">
 
         <activity
             android:name=".MainActivity" >

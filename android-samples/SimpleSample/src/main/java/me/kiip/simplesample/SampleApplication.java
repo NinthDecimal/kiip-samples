@@ -4,7 +4,6 @@ import android.app.Application;
 import android.util.Log;
 import me.kiip.sdk.Kiip;
 import me.kiip.sdk.Kiip.OnContentListener;
-import me.kiip.sdk.Kiip.OnSwarmListener;
 import me.kiip.sdk.KiipFragmentCompat;
 import me.kiip.sdk.Poptart;
 
