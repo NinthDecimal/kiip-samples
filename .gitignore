@@ -24,3 +24,7 @@ DerivedData
 *.xcuserstate
 
 .DS_Store
+
+#Kiip
+KiipSDKResources.bundle/
+KiipSDK.framework/
