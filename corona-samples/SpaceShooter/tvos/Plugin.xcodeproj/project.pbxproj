@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		A40A8FE61BD973A8001D2038 /* Corona_plugin_library.framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A40A8FE91BD973A8001D2038 /* Build configuration list for PBXAggregateTarget "Corona_plugin_library.framework" */;
+			buildPhases = (
+				A40A8FEC1BD973B8001D2038 /* Build Universal Binary */,
+			);
+			dependencies = (
+				A40A8FEB1BD973B2001D2038 /* PBXTargetDependency */,
+			);
+			name = Corona_plugin_library.framework;
+			productName = Corona_plugin_library.framework;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		A49EC18A1BD779560093F529 /* Corona_plugin_library.h in Headers */ = {isa = PBXBuildFile; fileRef = A49EC1891BD779560093F529 /* Corona_plugin_library.h */; };
+		A49EC1991BD779C10093F529 /* PluginLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = A49EC1971BD779C10093F529 /* PluginLibrary.h */; };
+		A49EC19A1BD779C10093F529 /* PluginLibrary.mm in Sources */ = {isa = PBXBuildFile; fileRef = A49EC1981BD779C10093F529 /* PluginLibrary.mm */; };
+		A49EC1AB1BD77C530093F529 /* CoronaCards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49EC1AA1BD77C530093F529 /* CoronaCards.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		A40A8FE21BD97297001D2038 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.lua";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(DERIVED_FILE_DIR)/$(INPUT_FILE_BASE).c",
+			);
+			script = "CORONA_DIR=$SRCROOT/CoronaEnterprise/Corona\nCORONA_MAC_BIN_DIR=$CORONA_DIR/mac/bin\n\nif [ -e \"$CORONA_MAC_BIN_DIR/lua\" ]; then\n    LUA_DIR=$CORONA_MAC_BIN_DIR/lua\nelse\n    echo \"Could not find proper 32-bit lua build in: $CORONA_MAC_BIN_DIR/lua\"\n    exit 1\nfi\n\necho $CORONA_MAC_BIN_DIR/lua2c.sh $INPUT_FILE_PATH $DERIVED_FILE_DIR $CONFIGURATION\n\"$CORONA_MAC_BIN_DIR/lua2c.sh\" \"$INPUT_FILE_PATH\" \"$DERIVED_FILE_DIR\" \"$CONFIGURATION\" \"$CORONA_MAC_BIN_DIR\"";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		A40A8FEA1BD973B2001D2038 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A49EC17D1BD779560093F529 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A49EC1851BD779560093F529;
+			remoteInfo = Corona_plugin_library;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A49EC1861BD779560093F529 /* Corona_plugin_library.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Corona_plugin_library.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A49EC1891BD779560093F529 /* Corona_plugin_library.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Corona_plugin_library.h; path = Plugin/Corona_plugin_library.h; sourceTree = "<group>"; };
+		A49EC18B1BD779560093F529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Plugin/Info.plist; sourceTree = "<group>"; };
+		A49EC1971BD779C10093F529 /* PluginLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PluginLibrary.h; path = Plugin/PluginLibrary.h; sourceTree = "<group>"; };
+		A49EC1981BD779C10093F529 /* PluginLibrary.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PluginLibrary.mm; path = Plugin/PluginLibrary.mm; sourceTree = "<group>"; };
+		A49EC1AA1BD77C530093F529 /* CoronaCards.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoronaCards.framework; path = CoronaEnterprise/Corona/tvos/frameworks/CoronaCards.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A49EC1821BD779560093F529 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A49EC1AB1BD77C530093F529 /* CoronaCards.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A40A8FBE1BD96ED5001D2038 /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				A49EC1891BD779560093F529 /* Corona_plugin_library.h */,
+				A49EC1971BD779C10093F529 /* PluginLibrary.h */,
+				A49EC1981BD779C10093F529 /* PluginLibrary.mm */,
+				A49EC18B1BD779560093F529 /* Info.plist */,
+			);
+			name = Plugin;
+			sourceTree = "<group>";
+		};
+		A49EC17C1BD779560093F529 = {
+			isa = PBXGroup;
+			children = (
+				A40A8FBE1BD96ED5001D2038 /* Plugin */,
+				A49EC1AC1BD77C5A0093F529 /* Frameworks */,
+				A49EC1871BD779560093F529 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A49EC1871BD779560093F529 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A49EC1861BD779560093F529 /* Corona_plugin_library.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A49EC1AC1BD77C5A0093F529 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A49EC1AA1BD77C530093F529 /* CoronaCards.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A49EC1831BD779560093F529 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A49EC18A1BD779560093F529 /* Corona_plugin_library.h in Headers */,
+				A49EC1991BD779C10093F529 /* PluginLibrary.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A49EC1851BD779560093F529 /* Corona_plugin_library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A49EC18E1BD779560093F529 /* Build configuration list for PBXNativeTarget "Corona_plugin_library" */;
+			buildPhases = (
+				A49EC1811BD779560093F529 /* Sources */,
+				A49EC1821BD779560093F529 /* Frameworks */,
+				A49EC1831BD779560093F529 /* Headers */,
+				A49EC1841BD779560093F529 /* Resources */,
+			);
+			buildRules = (
+				A40A8FE21BD97297001D2038 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = Corona_plugin_library;
+			productName = Corona_plugin_library;
+			productReference = A49EC1861BD779560093F529 /* Corona_plugin_library.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A49EC17D1BD779560093F529 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Corona Labs";
+				TargetAttributes = {
+					A40A8FE61BD973A8001D2038 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					A49EC1851BD779560093F529 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = A49EC1801BD779560093F529 /* Build configuration list for PBXProject "Plugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A49EC17C1BD779560093F529;
+			productRefGroup = A49EC1871BD779560093F529 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A49EC1851BD779560093F529 /* Corona_plugin_library */,
+				A40A8FE61BD973A8001D2038 /* Corona_plugin_library.framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A49EC1841BD779560093F529 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A40A8FEC1BD973B8001D2038 /* Build Universal Binary */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Universal Binary";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ ! -d \"$CORONA_ROOT\" ]\nthen\n\t# Assume symlink location\n\tCORONA_ROOT=$PROJECT_DIR/CoronaEnterprise\nfi\n\nif [ ! -d \"$CORONA_ROOT\" ]\nthen\n    echo \"Could not find Corona Enterprise directory\"\n    exit -1\nfi\n\n# -------------------------------------------------------------------\n\n\"$CORONA_ROOT\"/Corona/xcode/universal-framework.sh \"appletv\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A49EC1811BD779560093F529 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A49EC19A1BD779C10093F529 /* PluginLibrary.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A40A8FEB1BD973B2001D2038 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A49EC1851BD779560093F529 /* Corona_plugin_library */;
+			targetProxy = A40A8FEA1BD973B2001D2038 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A40A8FE71BD973A8001D2038 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A40A8FE81BD973A8001D2038 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A49EC18C1BD779560093F529 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A49EC18D1BD779560093F529 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A49EC18F1BD779560093F529 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CoronaEnterprise/Corona/tvos/frameworks",
+				);
+				INFOPLIST_FILE = Plugin/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coronalabs.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/CoronaEnterprise/Corona/tvos/frameworks/CoronaCards.framework/PrivateHeaders";
+			};
+			name = Debug;
+		};
+		A49EC1901BD779560093F529 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CoronaEnterprise/Corona/tvos/frameworks",
+				);
+				INFOPLIST_FILE = Plugin/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coronalabs.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/CoronaEnterprise/Corona/tvos/frameworks/CoronaCards.framework/PrivateHeaders";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A40A8FE91BD973A8001D2038 /* Build configuration list for PBXAggregateTarget "Corona_plugin_library.framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A40A8FE71BD973A8001D2038 /* Debug */,
+				A40A8FE81BD973A8001D2038 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A49EC1801BD779560093F529 /* Build configuration list for PBXProject "Plugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A49EC18C1BD779560093F529 /* Debug */,
+				A49EC18D1BD779560093F529 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A49EC18E1BD779560093F529 /* Build configuration list for PBXNativeTarget "Corona_plugin_library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A49EC18F1BD779560093F529 /* Debug */,
+				A49EC1901BD779560093F529 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A49EC17D1BD779560093F529 /* Project object */;
+}
