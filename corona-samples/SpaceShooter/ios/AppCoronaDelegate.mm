@@ -9,29 +9,29 @@
 
 #import "CoronaRuntime.h"
 #import "CoronaLua.h"
-//#import <KiipSDK/KiipSDK.h>
+#import <KiipSDK/KiipSDK.h>
 
 @implementation AppCoronaDelegate
 
 - (void)willLoadMain:(id<CoronaRuntime>)runtime
 {
-//    Kiip *kiip = [[Kiip alloc] initWithAppKey:@"a22232a561a02fdf7684ef67a48aeeb5" andSecret:@"e320cb6c3b23b4d2eee7b6aa0954ef17"];
-//    [Kiip setSharedInstance:kiip];
-//    [Kiip sharedInstance].testMode = YES;
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 4 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-//        [[Kiip sharedInstance] saveMoment:@"test" withCompletionHandler:^(KPPoptart *poptart, NSError *error) {
-//            if (error) {
-//                NSLog(@"something's wrong");
-//                // handle with an Alert dialog.
-//            }
-//            if (poptart) {
-//                [poptart show];
-//            }
-//            if (!poptart) {
-//                // handle logic when there is no reward to give.
-//            }
-//        }];
-//    });
+    Kiip *kiip = [[Kiip alloc] initWithAppKey:@"a22232a561a02fdf7684ef67a48aeeb5" andSecret:@"e320cb6c3b23b4d2eee7b6aa0954ef17"];
+    [Kiip setSharedInstance:kiip];
+    [Kiip sharedInstance].testMode = YES;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 4 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        [[Kiip sharedInstance] saveMoment:@"test" withCompletionHandler:^(KPPoptart *poptart, NSError *error) {
+            if (error) {
+                NSLog(@"something's wrong");
+                // handle with an Alert dialog.
+            }
+            if (poptart) {
+                [poptart show];
+            }
+            if (!poptart) {
+                // handle logic when there is no reward to give.
+            }
+        }];
+    });
 }
 
 - (void)didLoadMain:(id<CoronaRuntime>)runtime

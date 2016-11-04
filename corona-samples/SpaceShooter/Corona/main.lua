@@ -1,5 +1,5 @@
 local kiip = require( "plugin.kiip" )
-kiip.init("3b46e5f42299f1697193bb843ed8dbf4", "90c4f68ebb4817b3edf24799b04df22c")
+kiip.init("e034e855dee6bc37a2d1a0077719e358", "84971bc43a995c8eba495f71749c26e9")
 kiip.setProperties({testMode = true})
 local composer = require( "composer" )
 

@@ -34,7 +34,10 @@
         android:hardwareAccelerated="true"
         tools:targetApi="honeycomb"
         tools:ignore="GoogleAppIndexingWarning">
-
+        <meta-data android:name="me.kiip.sdk.AppKey" android:value="e034e855dee6bc37a2d1a0077719e358"/>
+        <provider android:name="me.kiip.sdk.KiipSDKProvider"
+            android:authorities="me.kiip.sdk.KiipSDKProvidere034e855dee6bc37a2d1a0077719e358"
+            android:exported="true" />
         <!-- The main Corona activity that runs the Corona project. -->
         <activity android:name="com.ansca.corona.CoronaActivity"
             android:screenOrientation="portrait"

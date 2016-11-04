@@ -6,8 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/CustomSample/CustomSample.iml" filepath="$PROJECT_DIR$/CustomSample/CustomSample.iml" />
       <module fileurl="file://$PROJECT_DIR$/SimpleSample/SimpleSample.iml" filepath="$PROJECT_DIR$/SimpleSample/SimpleSample.iml" />
       <module fileurl="file://$PROJECT_DIR$/android-samples.iml" filepath="$PROJECT_DIR$/android-samples.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kiip-samples.iml" filepath="$PROJECT_DIR$/kiip-samples.iml" />
     </modules>
   </component>
 </project>
-
