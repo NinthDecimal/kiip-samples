@@ -5,7 +5,12 @@
 
     <!-- Permissions required by this app. -->
     <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- END -->
 
+    <!-- Kiip Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <!-- Informs the app store that this app requires OpenGL ES 2.0 as a minimum. Required by Corona. -->
     <uses-feature android:glEsVersion="0x00020000"/>
 

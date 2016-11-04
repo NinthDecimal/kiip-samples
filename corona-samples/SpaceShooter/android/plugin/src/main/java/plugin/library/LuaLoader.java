@@ -7,7 +7,7 @@
 
 // This corresponds to the name of the Lua library,
 // e.g. [Lua] require "plugin.library"
-package plugin.kiip;
+package plugin.library;
 
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
