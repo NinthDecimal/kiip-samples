@@ -17,8 +17,8 @@ import java.util.LinkedList;
 public class SampleApplication extends Application implements OnContentListener {
 
     public static final String TAG = "kiip";
-    private static final String APP_KEY = "e034e855dee6bc37a2d1a0077719e358";
-    private static final String APP_SECRET = "84971bc43a995c8eba495f71749c26e9";
+    private static final String APP_KEY = "my_app_key";
+    private static final String APP_SECRET = "my_app_secret";
 
     @Override
     public void onCreate() {
