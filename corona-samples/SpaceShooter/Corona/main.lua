@@ -1,5 +1,8 @@
+local KIIP_KEY = "e034e855dee6bc37a2d1a0077719e358"
+local KIIP_SECRET = "84971bc43a995c8eba495f71749c26e9"
+
 local kiip = require( "plugin.kiip" )
-kiip.init("e034e855dee6bc37a2d1a0077719e358", "84971bc43a995c8eba495f71749c26e9")
+kiip.init(KIIP_KEY, KIIP_SECRET)
 kiip.setProperties({testMode = true})
 local composer = require( "composer" )
 
