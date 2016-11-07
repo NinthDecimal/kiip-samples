@@ -17,6 +17,7 @@ This project shows you:
 2. Go to [CoronaLab website](https://coronalabs.com/) and download Corona SDK and Corona enterprise SDK and follow the steps to setup.
 3. Open main.lua from corona-samples/SpaceShooter/Corona/main.lua file and replace KIIP_KEY and KIIP_SECRET with the key and secret you obtain from step 1.
 4. Clone this repository and you can find both android and ios project in /android and /ios directory. Simply open the app project in your IDE (Android Studio for Androi and Xcode for iOS) and run it.
+
 ## API docs
 place kiip init in your main.lua
 ``` lua
