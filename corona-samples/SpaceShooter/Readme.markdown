@@ -1,32 +1,49 @@
-# TemplateProject
-
-> --------------------- ------------------------------------------------------------------------------------------
-> __Revision__          [REVISION_LABEL](REVISION_URL)
-> __Keywords__          iOS, Android
-> __See also__          
-> --------------------- ------------------------------------------------------------------------------------------
+# Space Shooter
 
 ## Overview
+This project searves as example how to integrate Kiip Corona Plugin.
 
-You should start all new Corona projects by copying this project.
+This project shows you:
 
-This project allows you to:
+* How to init plugin
+* How to set test mode and other properties
+* How to save a moment
+* How to show a poptart
+* How to start a session
+* How to end a session
 
-* develop cross-platform Corona Enterprise apps
-* create plugins for Corona Enterprise
-
-## Code Walkthrough
-
-### iOS
-
-#### 
-* The `AppCoronaDelegate` implements the `CoronaDelegate` protocol. In particular it implements the method `willLoadMain:` which is your opportunity to modify the Lua state prior to execution of `main.lua`. 
-* This method creates a Lua library called `myTests` and binds native functions to that library.
-
-### Android
-
-* The Android "Application" class is overridden in this application so that a CoronaRuntimeListener can be set up before a Corona activity has been displayed.  This listener detects when a Corona runtime has been loaded, started, suspended, resumed, and exiting.  The listener's onLoaded() method is the application's opportunity to add its own custom Lua API to the Corona project.  See source file "CoronaApplication.java" on how to implement this.
-* Lua functions are implemented in Java by using the "com.naef.jnlua.NamedJavaFunction" interface.  All source files ending with "*LuaFunction.java" in this sample project implement this interface.  They demonstrate how to use a LuaState object to perform fundamental operations such as fetching argument values, returning values, working with tables/arrays, and calling Lua functions from Java.
-* Source file "AsyncCallLuaFunction.java" demonstrates how to safely call a Lua function from another thread.  This is important if you want to set up an asynchronous Lua function that accepts a Lua callback to be called from another thread once the asynchronous operation has ended.
-* 3rd party libraries such as InMobi and inneractive have been excluded from this project.  This reduces the size of the resulting APK file.  Attempting to use these libraries from Lua will cause an exception to be thrown which will crash the application.
-
+## Set Up Account Requirements
+1. Go to [Kiip Website](http://www.kiip.me/) to create an account and obtain a key and secret.
+2. Go to [CoronaLab website](https://coronalabs.com/) and download Corona SDK and Corona enterprise SDK and follow the steps to setup.
+3. Open main.lua from corona-samples/SpaceShooter/Corona/main.lua file and replace KIIP_KEY and KIIP_SECRET with the key and secret you obtain from step 1.
+4. Clone this repository and you can find both android and ios project in /android and /ios directory. Simply open the app project in your IDE (Android Studio for Androi and Xcode for iOS) and run it.
+## API docs
+place kiip init in your main.lua
+``` lua
+local kiip = require( "plugin.kiip" )
+kiip.init(YOUR_KEY, YOUR_SECRET)
+```
+you can set testMode or extra properties
+``` lua
+kiip.setProperties({
+    testMode = true --optional
+})
+```
+to save a moment
+``` lua
+kiip.saveMoment({
+    saveMomentId = "test" -- required
+})
+```
+to display a poptart, note: prior to this call, you must call saveMoment to successfuly obtain a poptart.
+``` lua
+kiip.showPoptart({})
+```
+please notify kiip when the app is on foreground by calling startSession
+``` lua
+kiip.startSession({})
+```
+please notify kiip when the app is in background by calling endSession
+``` lua
+kiip.endSession({})
+```
