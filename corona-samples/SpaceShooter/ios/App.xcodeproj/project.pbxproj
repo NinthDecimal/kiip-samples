@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3433D0201DCC425D007A44E8 /* KiipSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3433D01F1DCC425D007A44E8 /* KiipSDK.framework */; };
 		3433D0241DCC42B2007A44E8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3433D0231DCC42B2007A44E8 /* CoreTelephony.framework */; };
 		3433D0261DCC42C3007A44E8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3433D0251DCC42C3007A44E8 /* AdSupport.framework */; };
 		3433D0281DCC42C8007A44E8 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3433D0271DCC42C8007A44E8 /* PassKit.framework */; };
 		3433D02B1DCC44D2007A44E8 /* libplugin_kiip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3433D02A1DCC44D2007A44E8 /* libplugin_kiip.a */; };
+		34B37A4D1DD1134500B9CBD9 /* libKiipSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B37A4C1DD1134500B9CBD9 /* libKiipSDK.a */; };
 		A447B610165D72FB009EA762 /* AppCoronaDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = A447B60F165D72FB009EA762 /* AppCoronaDelegate.mm */; };
 		A447B6671666FD02009EA762 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A447B6641666FD02009EA762 /* MainWindow-iPad.xib */; };
 		A447B6681666FD02009EA762 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A447B6651666FD02009EA762 /* MainWindow.xib */; };
@@ -75,11 +75,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3433D01F1DCC425D007A44E8 /* KiipSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KiipSDK.framework; sourceTree = "<group>"; };
 		3433D0231DCC42B2007A44E8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		3433D0251DCC42C3007A44E8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		3433D0271DCC42C8007A44E8 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		3433D02A1DCC44D2007A44E8 /* libplugin_kiip.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libplugin_kiip.a; sourceTree = "<group>"; };
+		34B37A4C1DD1134500B9CBD9 /* libKiipSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libKiipSDK.a; sourceTree = "<group>"; };
 		A447B60E165D72FB009EA762 /* AppCoronaDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCoronaDelegate.h; sourceTree = SOURCE_ROOT; };
 		A447B60F165D72FB009EA762 /* AppCoronaDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppCoronaDelegate.mm; sourceTree = SOURCE_ROOT; };
 		A447B6641666FD02009EA762 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "CoronaEnterprise/Corona/ios/resource/MainWindow-iPad.xib"; sourceTree = SOURCE_ROOT; };
@@ -147,7 +147,6 @@
 				F5BB41531BC42ACF0033F6FA /* CoreText.framework in Frameworks */,
 				A46885F418068C2900381941 /* CoreVideo.framework in Frameworks */,
 				A46885F218068C2200381941 /* GLKit.framework in Frameworks */,
-				3433D0201DCC425D007A44E8 /* KiipSDK.framework in Frameworks */,
 				A4C2449A1683FA5300C395D1 /* Accounts.framework in Frameworks */,
 				A4C2449C1683FA5300C395D1 /* Social.framework in Frameworks */,
 				A484117715128D5D0074BD57 /* AddressBook.framework in Frameworks */,
@@ -170,6 +169,7 @@
 				A484118515128D5D0074BD57 /* MobileCoreServices.framework in Frameworks */,
 				A484118615128D5D0074BD57 /* OpenAL.framework in Frameworks */,
 				A484112615114F700074BD57 /* OpenGLES.framework in Frameworks */,
+				34B37A4D1DD1134500B9CBD9 /* libKiipSDK.a in Frameworks */,
 				A484118815128D5D0074BD57 /* Security.framework in Frameworks */,
 				A484118915128D5D0074BD57 /* StoreKit.framework in Frameworks */,
 				A4E2537F166AE3DC00DCDC2C /* Twitter.framework in Frameworks */,
@@ -231,11 +231,11 @@
 		A484111C15114F700074BD57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				34B37A4C1DD1134500B9CBD9 /* libKiipSDK.a */,
 				3433D02A1DCC44D2007A44E8 /* libplugin_kiip.a */,
 				3433D0271DCC42C8007A44E8 /* PassKit.framework */,
 				3433D0251DCC42C3007A44E8 /* AdSupport.framework */,
 				3433D0231DCC42B2007A44E8 /* CoreTelephony.framework */,
-				3433D01F1DCC425D007A44E8 /* KiipSDK.framework */,
 				E640B2F31BFC00BA0031FAE9 /* Photos.framework */,
 				E640B2F11BFC00B00031FAE9 /* AssetsLibrary.framework */,
 				F5E548081BE7FF0200091810 /* GameController.framework */,
