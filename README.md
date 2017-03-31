@@ -1,4 +1,4 @@
 kiip-samples
 ============
 
-A repo containing Kiip Client samples
+A repo containing Kiip SDK Client samples.
