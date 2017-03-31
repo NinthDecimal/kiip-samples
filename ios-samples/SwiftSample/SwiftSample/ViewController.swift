@@ -24,20 +24,17 @@ class ViewController: UIViewController {
     }
 
     func initButton() {
-        btnSaveMoment.backgroundColor = UIColor.yellowColor()
+        btnSaveMoment.backgroundColor = UIColor.yellow
         btnSaveMoment.layer.cornerRadius = 5
         btnSaveMoment.layer.borderWidth = 1
-        btnSaveMoment.layer.borderColor = self.view.tintColor.CGColor
+        btnSaveMoment.layer.borderColor = self.view.tintColor.cgColor
         btnSaveMoment.titleEdgeInsets = UIEdgeInsets.init(top: 2, left: 2, bottom: 2, right: 2)
     }
     
-    @IBAction func tapSaveMoment(sender: AnyObject) {
-        Kiip.sharedInstance().saveMoment("test") { (poptart:KPPoptart!, error:NSError!) -> Void in
-            if ((poptart) != nil) {
-                poptart.show();
-            }
-        }
+    @IBAction func tapSaveMoment(_ sender: AnyObject) {
+        Kiip.sharedInstance().saveMoment("test", withCompletionHandler: { (poptart, error) in
+            poptart?.show()
+        })
     }
-
 }
 

@@ -12,8 +12,6 @@
 		702F5F301BFE56B6009D6F6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 702F5F2E1BFE56B6009D6F6C /* Main.storyboard */; };
 		702F5F321BFE56B6009D6F6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 702F5F311BFE56B6009D6F6C /* Assets.xcassets */; };
 		702F5F351BFE56B6009D6F6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 702F5F331BFE56B6009D6F6C /* LaunchScreen.storyboard */; };
-		702F5F3F1BFE574D009D6F6C /* KiipSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702F5F3D1BFE574D009D6F6C /* KiipSDK.framework */; settings = {ASSET_TAGS = (); }; };
-		702F5F401BFE574D009D6F6C /* KiipSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 702F5F3E1BFE574D009D6F6C /* KiipSDKResources.bundle */; settings = {ASSET_TAGS = (); }; };
 		702F5F431BFE58FD009D6F6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702F5F421BFE58FD009D6F6C /* Foundation.framework */; };
 		702F5F451BFE5905009D6F6C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702F5F441BFE5905009D6F6C /* MediaPlayer.framework */; };
 		702F5F471BFE590D009D6F6C /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702F5F461BFE590D009D6F6C /* PassKit.framework */; };
@@ -21,6 +19,8 @@
 		702F5F4B1BFE591E009D6F6C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702F5F4A1BFE591E009D6F6C /* QuartzCore.framework */; };
 		702F5F4D1BFE5925009D6F6C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702F5F4C1BFE5925009D6F6C /* CoreTelephony.framework */; };
 		702F5F4F1BFE5936009D6F6C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702F5F4E1BFE5936009D6F6C /* SystemConfiguration.framework */; };
+		7087D0841E8F00C2004B117D /* KiipSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7087D0801E8F0029004B117D /* KiipSDK.framework */; };
+		7087D0861E8F00D0004B117D /* KiipSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7087D0851E8F00D0004B117D /* KiipSDKResources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +31,6 @@
 		702F5F311BFE56B6009D6F6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		702F5F341BFE56B6009D6F6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		702F5F361BFE56B6009D6F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		702F5F3D1BFE574D009D6F6C /* KiipSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KiipSDK.framework; sourceTree = "<group>"; };
-		702F5F3E1BFE574D009D6F6C /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KiipSDKResources.bundle; sourceTree = "<group>"; };
 		702F5F411BFE57F5009D6F6C /* SwiftSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		702F5F421BFE58FD009D6F6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		702F5F441BFE5905009D6F6C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -41,6 +39,8 @@
 		702F5F4A1BFE591E009D6F6C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		702F5F4C1BFE5925009D6F6C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		702F5F4E1BFE5936009D6F6C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7087D0801E8F0029004B117D /* KiipSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KiipSDK.framework; path = ../KiipSDK.framework; sourceTree = "<group>"; };
+		7087D0851E8F00D0004B117D /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KiipSDKResources.bundle; path = ../KiipSDKResources.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,11 +51,11 @@
 				702F5F4F1BFE5936009D6F6C /* SystemConfiguration.framework in Frameworks */,
 				702F5F4D1BFE5925009D6F6C /* CoreTelephony.framework in Frameworks */,
 				702F5F4B1BFE591E009D6F6C /* QuartzCore.framework in Frameworks */,
+				7087D0841E8F00C2004B117D /* KiipSDK.framework in Frameworks */,
 				702F5F491BFE5913009D6F6C /* AdSupport.framework in Frameworks */,
 				702F5F471BFE590D009D6F6C /* PassKit.framework in Frameworks */,
 				702F5F451BFE5905009D6F6C /* MediaPlayer.framework in Frameworks */,
 				702F5F431BFE58FD009D6F6C /* Foundation.framework in Frameworks */,
-				702F5F3F1BFE574D009D6F6C /* KiipSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,8 +97,8 @@
 		702F5F3C1BFE573E009D6F6C /* KiipSDK */ = {
 			isa = PBXGroup;
 			children = (
-				702F5F3D1BFE574D009D6F6C /* KiipSDK.framework */,
-				702F5F3E1BFE574D009D6F6C /* KiipSDKResources.bundle */,
+				7087D0851E8F00D0004B117D /* KiipSDKResources.bundle */,
+				7087D0801E8F0029004B117D /* KiipSDK.framework */,
 			);
 			name = KiipSDK;
 			sourceTree = "<group>";
@@ -148,6 +148,7 @@
 				TargetAttributes = {
 					702F5F261BFE56B6009D6F6C = {
 						CreatedOnToolsVersion = 7.0.1;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -175,7 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				702F5F351BFE56B6009D6F6C /* LaunchScreen.storyboard in Resources */,
-				702F5F401BFE574D009D6F6C /* KiipSDKResources.bundle in Resources */,
+				7087D0861E8F00D0004B117D /* KiipSDKResources.bundle in Resources */,
 				702F5F321BFE56B6009D6F6C /* Assets.xcassets in Resources */,
 				702F5F301BFE56B6009D6F6C /* Main.storyboard in Resources */,
 			);
@@ -304,13 +305,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"\"$(SRCROOT)/..\"",
 				);
 				INFOPLIST_FILE = SwiftSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kiip.SwiftSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftSample/SwiftSample-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -320,13 +322,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"\"$(SRCROOT)/..\"",
 				);
 				INFOPLIST_FILE = SwiftSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kiip.SwiftSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftSample/SwiftSample-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -349,6 +352,7 @@
 				702F5F3B1BFE56B6009D6F6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

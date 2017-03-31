@@ -24,10 +24,11 @@
 		5EE35C62178CD6F800C18D70 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE35C61178CD6F800C18D70 /* SystemConfiguration.framework */; };
 		5EE35C70178CD8FE00C18D70 /* KPCustomNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE35C6E178CD86100C18D70 /* KPCustomNotificationView.m */; };
 		5EF15BD2178F5AF90087EAAB /* KPCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF15BD1178F5AF90087EAAB /* KPCustomButton.m */; };
+		7087D07D1E8EFC62004B117D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7087D07C1E8EFC62004B117D /* MediaPlayer.framework */; };
+		7087D07F1E8EFC76004B117D /* KiipSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7087D07E1E8EFC76004B117D /* KiipSDKResources.bundle */; };
 		EE39D14E1795E616005CD821 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE39D14C1795E616005CD821 /* ViewController.xib */; };
 		EEBDC8A517C2C345008F195C /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBDC8A417C2C345008F195C /* PassKit.framework */; };
 		EED2F98C1794A5CE00433F73 /* KiipSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EED2F98B1794A5CE00433F73 /* KiipSDK.framework */; };
-		EED2F98E1794A5DE00433F73 /* KiipSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EED2F98D1794A5DE00433F73 /* KiipSDKResources.bundle */; };
 		EED2F9901794A5F400433F73 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EED2F98F1794A5F400433F73 /* AdSupport.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,10 +58,11 @@
 		5EE35C6E178CD86100C18D70 /* KPCustomNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPCustomNotificationView.m; sourceTree = "<group>"; };
 		5EF15BD0178F5AF90087EAAB /* KPCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPCustomButton.h; sourceTree = "<group>"; };
 		5EF15BD1178F5AF90087EAAB /* KPCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPCustomButton.m; sourceTree = "<group>"; };
+		7087D07C1E8EFC62004B117D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		7087D07E1E8EFC76004B117D /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KiipSDKResources.bundle; path = ../KiipSDKResources.bundle; sourceTree = "<group>"; };
 		EE39D14D1795E616005CD821 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = CustomSample/en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		EEBDC8A417C2C345008F195C /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		EED2F98B1794A5CE00433F73 /* KiipSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KiipSDK.framework; path = ../KiipSDK.framework; sourceTree = "<group>"; };
-		EED2F98D1794A5DE00433F73 /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KiipSDKResources.bundle; path = ../KiipSDK.framework/Resources/KiipSDKResources.bundle; sourceTree = "<group>"; };
 		EED2F98F1794A5F400433F73 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -69,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7087D07D1E8EFC62004B117D /* MediaPlayer.framework in Frameworks */,
 				EEBDC8A517C2C345008F195C /* PassKit.framework in Frameworks */,
 				EED2F9901794A5F400433F73 /* AdSupport.framework in Frameworks */,
 				5EE35C62178CD6F800C18D70 /* SystemConfiguration.framework in Frameworks */,
@@ -104,9 +107,9 @@
 		5EA941FE178CB88D000A22F2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7087D07C1E8EFC62004B117D /* MediaPlayer.framework */,
 				EEBDC8A417C2C345008F195C /* PassKit.framework */,
 				EED2F98B1794A5CE00433F73 /* KiipSDK.framework */,
-				EED2F98D1794A5DE00433F73 /* KiipSDKResources.bundle */,
 				EED2F98F1794A5F400433F73 /* AdSupport.framework */,
 				5EE35C5D178CD6E500C18D70 /* CoreTelephony.framework */,
 				5EE35C61178CD6F800C18D70 /* SystemConfiguration.framework */,
@@ -114,6 +117,7 @@
 				5EA941FF178CB88D000A22F2 /* UIKit.framework */,
 				5EA94201178CB88D000A22F2 /* Foundation.framework */,
 				5EA94203178CB88D000A22F2 /* CoreGraphics.framework */,
+				7087D07E1E8EFC76004B117D /* KiipSDKResources.bundle */,
 				5EA94226178CB88D000A22F2 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
@@ -211,13 +215,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7087D07F1E8EFC76004B117D /* KiipSDKResources.bundle in Resources */,
 				5EA9420A178CB88D000A22F2 /* InfoPlist.strings in Resources */,
 				5E141FFE1794705900BBED94 /* button.png in Resources */,
 				5E141FFF1794705900BBED94 /* button@2x.png in Resources */,
 				5E1420011794705900BBED94 /* notificationCustom.png in Resources */,
 				5E1420021794705900BBED94 /* notificationCustom@2x.png in Resources */,
 				5E640D2517947287001859EB /* Default-568h@2x.png in Resources */,
-				EED2F98E1794A5DE00433F73 /* KiipSDKResources.bundle in Resources */,
 				EE39D14E1795E616005CD821 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

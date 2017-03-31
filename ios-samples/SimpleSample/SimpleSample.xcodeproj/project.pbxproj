@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7087D0791E8EFB58004B117D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7087D0781E8EFB58004B117D /* MediaPlayer.framework */; };
+		7087D07B1E8EFB80004B117D /* KiipSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7087D07A1E8EFB80004B117D /* KiipSDKResources.bundle */; };
 		EEB9CEC817692BD800D4D5F3 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB9CEC717692BD800D4D5F3 /* AdSupport.framework */; };
 		EEBDC8A717C2C3DB008F195C /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBDC8A617C2C3DB008F195C /* PassKit.framework */; };
 		EECF7F95162FA23E00B92B7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECF7F94162FA23E00B92B7E /* UIKit.framework */; };
@@ -23,11 +25,13 @@
 		EECF7FC2162FA4DF00B92B7E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECF7FC1162FA4DF00B92B7E /* CoreTelephony.framework */; };
 		EECF7FC4162FA4E600B92B7E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECF7FC3162FA4E600B92B7E /* QuartzCore.framework */; };
 		EECF7FC6162FA4EB00B92B7E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECF7FC5162FA4EB00B92B7E /* SystemConfiguration.framework */; };
-		EECF7FCA162FA89D00B92B7E /* KiipSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EECF7FC9162FA89D00B92B7E /* KiipSDKResources.bundle */; };
 		EEEE83F8165466F70087765A /* KiipSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECF7FBE162FA43E00B92B7E /* KiipSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7087D0761E8EFAB2004B117D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		7087D0781E8EFB58004B117D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		7087D07A1E8EFB80004B117D /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KiipSDKResources.bundle; path = ../KiipSDKResources.bundle; sourceTree = "<group>"; };
 		EEB9CEC717692BD800D4D5F3 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		EEBDC8A617C2C3DB008F195C /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		EECF7F90162FA23E00B92B7E /* SimpleSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,7 +54,6 @@
 		EECF7FC1162FA4DF00B92B7E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		EECF7FC3162FA4E600B92B7E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EECF7FC5162FA4EB00B92B7E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		EECF7FC9162FA89D00B92B7E /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KiipSDKResources.bundle; path = ../KiipSDK.framework/Resources/KiipSDKResources.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,7 @@
 				EECF7FC2162FA4DF00B92B7E /* CoreTelephony.framework in Frameworks */,
 				EECF7F95162FA23E00B92B7E /* UIKit.framework in Frameworks */,
 				EECF7F97162FA23E00B92B7E /* Foundation.framework in Frameworks */,
+				7087D0791E8EFB58004B117D /* MediaPlayer.framework in Frameworks */,
 				EECF7F99162FA23E00B92B7E /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,16 +97,18 @@
 		EECF7F93162FA23E00B92B7E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7087D0781E8EFB58004B117D /* MediaPlayer.framework */,
+				7087D0761E8EFAB2004B117D /* CoreMedia.framework */,
 				EEBDC8A617C2C3DB008F195C /* PassKit.framework */,
 				EEB9CEC717692BD800D4D5F3 /* AdSupport.framework */,
 				EECF7FC5162FA4EB00B92B7E /* SystemConfiguration.framework */,
 				EECF7FC3162FA4E600B92B7E /* QuartzCore.framework */,
 				EECF7FC1162FA4DF00B92B7E /* CoreTelephony.framework */,
 				EECF7FBE162FA43E00B92B7E /* KiipSDK.framework */,
-				EECF7FC9162FA89D00B92B7E /* KiipSDKResources.bundle */,
 				EECF7F94162FA23E00B92B7E /* UIKit.framework */,
 				EECF7F96162FA23E00B92B7E /* Foundation.framework */,
 				EECF7F98162FA23E00B92B7E /* CoreGraphics.framework */,
+				7087D07A1E8EFB80004B117D /* KiipSDKResources.bundle */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -191,7 +197,7 @@
 				EECF7FA9162FA23F00B92B7E /* Default@2x.png in Resources */,
 				EECF7FAB162FA23F00B92B7E /* Default-568h@2x.png in Resources */,
 				EECF7FB1162FA23F00B92B7E /* SampleViewController.xib in Resources */,
-				EECF7FCA162FA89D00B92B7E /* KiipSDKResources.bundle in Resources */,
+				7087D07B1E8EFB80004B117D /* KiipSDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

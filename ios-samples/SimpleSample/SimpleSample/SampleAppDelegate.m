@@ -13,12 +13,11 @@
 @implementation SampleAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    Kiip *kiip = [[Kiip alloc] initWithAppKey:KP_APP_KEY andSecret:KP_APP_SECRET];
+    [Kiip initWithAppKey:KP_APP_KEY andSecret:KP_APP_SECRET];
     
     // Listen for Kiip events
-    kiip.delegate = self;
-    kiip.gender = @"Male";
-    [Kiip setSharedInstance:kiip];
+    [[Kiip sharedInstance] setDelegate:self];
+    [[Kiip sharedInstance] setGender:@"Male"];
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 

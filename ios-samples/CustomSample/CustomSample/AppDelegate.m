@@ -27,12 +27,12 @@
     self.customNotificationView = [[KPCustomNotificationView alloc] initWithFrame:CGRectZero];
     
     // Instantiate and set the shared Kiip instance.
-    Kiip *kiip = [[Kiip alloc] initWithAppKey:KP_APP_KEY andSecret:KP_APP_SECRET];
-    kiip.delegate = self;
+    [Kiip initWithAppKey:KP_APP_KEY andSecret:KP_APP_SECRET];
+    [[Kiip sharedInstance] setDelegate:self];
+    
     // Usually the notificationView is set here, but for the sake of this sample it is called in
     // toggleCustomNotification.
     // kiip.notificationView = self.customNotificationView;
-    [Kiip setSharedInstance:kiip];
     
     return YES;
 }

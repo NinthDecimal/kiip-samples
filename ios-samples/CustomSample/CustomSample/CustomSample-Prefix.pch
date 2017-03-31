@@ -13,5 +13,5 @@
     #import <Foundation/Foundation.h>
 #endif
 
-#define KP_APP_KEY    @"71ed0718bd1107f14e26755fbeb12a5a"
-#define KP_APP_SECRET @"e7d9f90581d96d72e05b9bf7d50e7879"
+#define KP_APP_KEY    @"<KIIP_APP_KEY>"
+#define KP_APP_SECRET @"<KIIP_APP_SECRET>"
