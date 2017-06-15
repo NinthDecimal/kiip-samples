@@ -4,6 +4,9 @@
 .vs
 .vs/
 
+platforms
+platforms/
+
 Xcode
 *.csproj
 *.pidb
