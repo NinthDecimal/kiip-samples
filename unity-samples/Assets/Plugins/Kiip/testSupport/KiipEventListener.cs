@@ -12,9 +12,10 @@ public class KiipEventListener : MonoBehaviour
     // 1 is refered as custom notification type
     private int notificationType = 0;
 
-    public void SetNotificationType(int value)
+    public void SetNotificationType(string value)
     {
-        notificationType = value;
+        notificationType = (value == "default" ? 0 : 1);
+        Debug.Log("notificationType " + value);
     }
     
     void OnEnable()
@@ -34,7 +35,8 @@ public class KiipEventListener : MonoBehaviour
 		Kiip.onDismissPoptartEvent += onDismissPoptartEvent;
 		Kiip.onVideoShowEvent += onVideoShowEvent;
 		Kiip.onVideoDismissEvent += onVideoDismissEvent;
-	}
+        Kiip.onVideoFinishedEvent += onVideoFinishedEvent;
+    }
 
 
 	void OnDisable()
@@ -54,7 +56,8 @@ public class KiipEventListener : MonoBehaviour
 		Kiip.onDismissPoptartEvent -= onDismissPoptartEvent;
 		Kiip.onVideoShowEvent -= onVideoShowEvent;
 		Kiip.onVideoDismissEvent -= onVideoDismissEvent;
-	}
+        Kiip.onVideoFinishedEvent -= onVideoFinishedEvent;
+    }
 
 
 
@@ -144,6 +147,11 @@ public class KiipEventListener : MonoBehaviour
 	{
 		Debug.Log( "onVideoDismissEvent" );
 	}
+
+    void onVideoFinishedEvent()
+    {
+        Debug.Log("onVideoFinishedEvent");
+    }
 #endif
 }
 

@@ -81,10 +81,12 @@ public partial class Kiip : MonoBehaviour
 
 	// Fired when a video is dismissed
 	public static event Action onVideoDismissEvent;
-	
-	
-	
-	public void sessionFailedToStart( string param )
+
+    // Fired when a video is finished
+    public static event Action onVideoFinishedEvent;
+
+
+    public void sessionFailedToStart( string param )
 	{
 		if( sessionFailedToStartEvent != null )
 		{
@@ -190,4 +192,10 @@ public partial class Kiip : MonoBehaviour
 		if( onVideoDismissEvent != null )
 			onVideoDismissEvent();
 	}
+
+    public void onVideoFinished(string empty)
+    {
+        if (onVideoFinishedEvent != null)
+            onVideoFinishedEvent();
+    }
 }

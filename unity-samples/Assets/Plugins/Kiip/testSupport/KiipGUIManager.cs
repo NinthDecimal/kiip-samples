@@ -26,7 +26,7 @@ public class KiipGUIManager : MonoBehaviour
 		{
             HideNotificaition(); // hide custom notification
 
-            GameObject.Find("KiipEventListener").SendMessage("SetNotificationType", 0); // set default notification
+            GameObject.Find("KiipEventListener").SendMessage("SetNotificationType", "default"); // set default notification
 
             if (momentText.text != "" && momentText != null)
                 Kiip.saveMoment(momentText.text);
@@ -37,7 +37,7 @@ public class KiipGUIManager : MonoBehaviour
 		{
             HideNotificaition(); // hide custom notification
 
-            GameObject.Find("KiipEventListener").SendMessage("SetNotificationType", 1); // set custom notification
+            GameObject.Find("KiipEventListener").SendMessage("SetNotificationType", "custom"); // set custom notification
 
             if (momentText.text != "" && momentText != null)
                 Kiip.saveMoment(momentText.text);
@@ -48,7 +48,7 @@ public class KiipGUIManager : MonoBehaviour
 		{
             HideNotificaition(); // hide custom notification
 
-            GameObject.Find("KiipEventListener").SendMessage("SetNotificationType", 1); // set custom notification
+            GameObject.Find("KiipEventListener").SendMessage("SetNotificationType", "custom"); // set custom notification
 
             if (momentText.text != "" && momentText.text != null && momentValue.text != "" && momentValue != null)
                 Kiip.saveMoment(momentText.text, double.Parse(momentValue.text));
