@@ -38,7 +38,7 @@ public class SampleApplication extends Application implements OnContentListener 
 
         // To test Kiip advertisement banner (WARNING: THIS IS ONLY FOR THE DEVELOPMENT PURPOSE)
         // COMMENT THIS OUT IN PRODUCTION
-        Kiip.getInstance().setTestMode(true);
+        //Kiip.getInstance().setTestMode(true);
     }
 
     @Override
