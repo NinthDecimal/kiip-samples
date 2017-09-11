@@ -18,10 +18,8 @@ import me.kiip.sdk.Poptart;
 public class SampleApplication extends Application implements OnContentListener {
 
     public static final String TAG = "kiip";
-//    private static final String APP_KEY = "my_app_key";
-    private static final String APP_KEY = "a74e0f59ac62b69290c26fc5dc9381de";
-//    private static final String APP_SECRET = "my_app_secret";
-    private static final String APP_SECRET = "0495aa4d5330e7e101de6c3a2e93b395";
+    private static final String APP_KEY = "my_app_key";
+    private static final String APP_SECRET = "my_app_secret";
 
     @Override
     public void onCreate() {
