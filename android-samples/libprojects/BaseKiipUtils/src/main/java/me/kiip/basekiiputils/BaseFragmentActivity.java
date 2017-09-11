@@ -18,13 +18,13 @@ public abstract class BaseFragmentActivity extends FragmentActivity implements K
     @Override
     protected void onStart() {
         super.onStart();
-        mKiipHelper.onStart(this);
+        mKiipHelper.onStart();
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        mKiipHelper.onStop(this);
+        mKiipHelper.onStop();
     }
 
     public KiipHelper getKiipHelper() {

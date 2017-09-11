@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 import me.kiip.basekiiputils.BaseFragmentActivity;
 import me.kiip.basekiiputils.KiipHelper;
@@ -20,6 +21,7 @@ public class MainActivity extends BaseFragmentActivity implements DialogInterfac
 
     EditText mMomentId;
     EditText mMomentValue;
+    TextView tvVersion;
 
     OnClickListener mOnClickListener = new OnClickListener() {
         @Override
@@ -76,6 +78,9 @@ public class MainActivity extends BaseFragmentActivity implements DialogInterfac
 
         mMomentId = (EditText) findViewById(R.id.moment_id);
         mMomentValue = (EditText)findViewById(R.id.moment_value);
+        tvVersion = (TextView) findViewById(R.id.tvVersion);
+
+        tvVersion.setText(Kiip.VERSION);
 
         final int[] clickables = {
                 R.id.btn_moment,

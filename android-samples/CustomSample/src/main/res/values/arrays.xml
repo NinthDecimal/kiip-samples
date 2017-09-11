@@ -4,5 +4,6 @@
         <item>Default Notification</item>
         <item>Custom Notification</item>
         <item>Integrated Notification</item>
+        <item>Native Reward</item>
     </string-array>
 </resources>

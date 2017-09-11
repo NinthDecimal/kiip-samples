@@ -30,4 +30,11 @@
             android:text="Start Activity"
         />
 
+    <TextView
+        android:id="@+id/tvVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Kiip SDK Version" />
+
 </LinearLayout>
