@@ -53,12 +53,26 @@ public class NativeListViewFragment extends Fragment {
             listAdapter.add(country);
         }
 
+
+
         mKiipRewardAdapter = new KiipRewardAdapter(getActivity(), listAdapter, 2);
         saveMomentBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 hideKeyboard(getActivity());
-                mKiipRewardAdapter.saveMoment(textMomentId.getText().toString());
+                mKiipRewardAdapter.saveMoment(textMomentId.getText().toString(), new KiipRewardAdapter.NativeCallback() {
+                    @Override
+                    public void onFailed(Exception e) {
+                        Log.e("KIIPSDK", e.toString());
+                    }
+
+                    @Override
+                    public void onSuccess(boolean b) {
+                        if (b) {
+                            mKiipRewardAdapter.showReward();
+                        }
+                    }
+                });
                 Toast.makeText(getActivity(), "Save Moment", Toast.LENGTH_SHORT).show();
             }
         });
