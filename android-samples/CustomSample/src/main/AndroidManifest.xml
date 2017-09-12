@@ -17,6 +17,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="me.kiip.sdk.AppKey"
+            android:value="<APP_KEY>" />
+        <provider
+            android:name="me.kiip.sdk.KiipSDKProvider"
+            android:authorities="me.kiip.sdk.KiipSDKProvider<APP_KEY>"
+            android:exported="true"
+            android:multiprocess="true" />
     </application>
 
 </manifest>

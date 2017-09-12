@@ -19,8 +19,8 @@ import me.kiip.sdk.Poptart;
  * Time: 4:36 PM
  */
 public class CustomApplication extends Application  {
-        private static final String APP_KEY = "my_app_key";
-        private static final String APP_SECRET = "my_app_secret";
+    private static final String APP_KEY = "my_app_key";
+    private static final String APP_SECRET = "my_app_secret";
 
     Kiip.KiipAdapter mAdapter = new Kiip.KiipAdapter() {
         @Override
