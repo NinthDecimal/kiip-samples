@@ -2,12 +2,13 @@ package me.kiip.simplesample;
 
 import android.app.Application;
 import android.util.Log;
+
+import java.util.LinkedList;
+
 import me.kiip.sdk.Kiip;
 import me.kiip.sdk.Kiip.OnContentListener;
 import me.kiip.sdk.KiipFragmentCompat;
 import me.kiip.sdk.Poptart;
-
-import java.util.LinkedList;
 
 /**
  * User: Grantland Chew <grantlandchew@gmail.com>
@@ -28,23 +29,24 @@ public class SampleApplication extends Application implements OnContentListener 
         KiipFragmentCompat.setDefaultQueue(new LinkedList<Poptart>());
 
         // Instantiate and set the shared Kiip instance
-        Kiip kiip = Kiip.init(this, APP_KEY, APP_SECRET);
+        Kiip.init(this, APP_KEY, APP_SECRET);
 
         // Listen for Kiip events
-        kiip.setOnContentListener(this);
+        Kiip.getInstance().setOnContentListener(this);
 
-        Kiip.setInstance(kiip);
+        // To test Kiip advertisement banner (WARNING: THIS IS ONLY FOR THE DEVELOPMENT PURPOSE)
+        // COMMENT THIS OUT IN PRODUCTION
+        Kiip.getInstance().setTestMode(true);
     }
 
-    //region Content listener
-
     @Override
-    public void onContent(Kiip kiip, String content, int quantity, String transactionId, String signature) {
-        Log.d(TAG, "onContent content=" + content + " quantity=" + quantity + " transactionId=" + transactionId + " signature=" + signature);
-
+    public void onContent(Kiip kiip, String s, int i, String s1, String s2) {
+        Log.d(TAG, "onContent content=" + s + " quantity=" + i + " transactionId=" + s1 + " signature=" + s2);
         // Add quantity amount of content to player's profile
         // e.g +20 coins to user's wallet
         // http://docs.kiip.com/en/guide/android.html#getting_virtual_rewards
     }
+    //region Content listener
+
     //endregion
 }

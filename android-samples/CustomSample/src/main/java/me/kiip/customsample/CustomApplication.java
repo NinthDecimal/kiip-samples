@@ -5,20 +5,20 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.util.LinkedList;
+
 import me.kiip.sdk.Kiip;
 import me.kiip.sdk.KiipFragmentCompat;
 import me.kiip.sdk.Notification;
 import me.kiip.sdk.Poptart;
-
-import java.util.LinkedList;
 
 /**
  * User: Grantland Chew <grantlandchew@gmail.com>
  * Date: 7/9/13
  * Time: 4:36 PM
  */
-public class CustomApplication extends Application {
-
+public class CustomApplication extends Application  {
     private static final String APP_KEY = "my_app_key";
     private static final String APP_SECRET = "my_app_secret";
 
@@ -31,9 +31,11 @@ public class CustomApplication extends Application {
 
             // Set custom notification properties.
             Notification notification = poptart.getNotification();
-            view.setIcon(notification.getIcon());
-            view.setTitle(notification.getTitle());
-            view.setMessage(notification.getMessage());
+            if (notification != null) {
+                view.setIcon(notification.getIcon());
+                view.setTitle(notification.getTitle());
+                view.setMessage(notification.getMessage());
+            }
 
             return view;
         }
@@ -47,11 +49,14 @@ public class CustomApplication extends Application {
         KiipFragmentCompat.setDefaultQueue(new LinkedList<Poptart>());
 
         // Instantiate and set the shared Kiip instance.
-        Kiip kiip = Kiip.init(this, APP_KEY, APP_SECRET);
+        Kiip.init(this, APP_KEY, APP_SECRET);
         // Usually the KiipAdapter is set here, but for the sake of this sample it is called in
         // setEnableCustomNotification.
         // kiip.setAdapter(mAdapter);
-        Kiip.setInstance(kiip);
+
+        // To test Kiip advertisement banner (WARNING: THIS IS ONLY FOR THE DEVELOPMENT PURPOSE)
+        // COMMENT THIS OUT IN PRODUCTION
+        Kiip.getInstance().setTestMode(true);
     }
 
     public void setEnableCustomNotification(boolean enabled) {
@@ -59,4 +64,5 @@ public class CustomApplication extends Application {
         // sample allows enabling/disabling, we have it here.
         Kiip.getInstance().setAdapter(enabled ? mAdapter : null);
     }
+
 }

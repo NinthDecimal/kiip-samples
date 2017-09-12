@@ -41,7 +41,7 @@ public class KiipHelper {
         }
     }
 
-    public void onStart(Context context) {
+    public void onStart() {
         // Must call startSession in every Activity#onStart.
         debugLog("onStart.");
         Kiip.getInstance().startSession(new Kiip.Callback() {
@@ -64,7 +64,7 @@ public class KiipHelper {
         });
     }
 
-    public void onStop(Context context) {
+    public void onStop() {
         // Must call endSession in every Activity#onStop.
         debugLog("onStop.");
         Kiip.getInstance().endSession(new Kiip.Callback() {
