@@ -1,0 +1,11 @@
+framework module XIDLibrary {
+  umbrella header "XIDLibrary.h"
+
+  export *
+  module * { export * }
+}
+
+module XIDLibrary.Swift {
+    header "XIDLibrary-Swift.h"
+    requires objc
+}
