@@ -15,10 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, KiipDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-//        let kiip: Kiip = Kiip.init();
-        Kiip.initWithAppKey(KP_APP_KEY, andSecret: KP_APP_SECRET);
         
-//        let kiip = Kiip.initWithAppKey(KP_APP_KEY, andSecret: KP_APP_SECRET);
+        //Initialize Kiip
+        Kiip.initWithAppKey(KP_APP_KEY, andSecret: KP_APP_SECRET);
+        //comment the test if you are done 
         Kiip.sharedInstance().testMode = true;
         Kiip.sharedInstance().delegate = self;
         
@@ -49,11 +49,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, KiipDelegate {
 
     //MARK:-- KiipDelegates --
     
-    func kiip(kiip:Kiip, didStartSessionWithPoptart poptart:KPPoptart, error:NSError) {
+    private func kiip(kiip:Kiip, didStartSessionWithPoptart poptart:KPPoptart, error:NSError) {
         print("kiip:didStartSessionWithPoptart: \(error.localizedDescription)")
     }
     
-    func kiip(kiip:Kiip, didEndSessionWithError error:NSError) {
+    private func kiip(kiip:Kiip, didEndSessionWithError error:NSError) {
         print("kiip:didStartSessionWithPoptart: \(error.localizedDescription)")
     }
     

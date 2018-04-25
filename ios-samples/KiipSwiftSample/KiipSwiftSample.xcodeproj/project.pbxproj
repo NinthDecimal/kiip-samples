@@ -25,6 +25,8 @@
 		C73124C6208E98C400DD5AC7 /* XIDLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73124B3208E97B300DD5AC7 /* XIDLibrary.framework */; };
 		C73124C7208E98C400DD5AC7 /* XIDLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C73124B3208E97B300DD5AC7 /* XIDLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C73124CE208E99AA00DD5AC7 /* KiipSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C73124CD208E99AA00DD5AC7 /* KiipSDKResources.bundle */; };
+		C7C1AE862090F1CF00922041 /* KiipTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C1AE852090F1CF00922041 /* KiipTableView.swift */; };
+		C7C1AE882091260C00922041 /* KiipNativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C1AE872091260C00922041 /* KiipNativeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -61,6 +63,8 @@
 		C73124C4208E983F00DD5AC7 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		C73124CD208E99AA00DD5AC7 /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KiipSDKResources.bundle; sourceTree = "<group>"; };
 		C73124D0208E9C6900DD5AC7 /* KiipSwiftSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KiipSwiftSample-Bridging-Header.h"; sourceTree = "<group>"; };
+		C7C1AE852090F1CF00922041 /* KiipTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiipTableView.swift; sourceTree = "<group>"; };
+		C7C1AE872091260C00922041 /* KiipNativeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiipNativeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 			children = (
 				C731249F208E96EA00DD5AC7 /* AppDelegate.swift */,
 				C73124A1208E96EA00DD5AC7 /* ViewController.swift */,
+				C7C1AE872091260C00922041 /* KiipNativeView.swift */,
+				C7C1AE852090F1CF00922041 /* KiipTableView.swift */,
 				C73124A3208E96EA00DD5AC7 /* Main.storyboard */,
 				C73124A6208E96EA00DD5AC7 /* Assets.xcassets */,
 				C73124A8208E96EA00DD5AC7 /* LaunchScreen.storyboard */,
@@ -208,6 +214,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7C1AE862090F1CF00922041 /* KiipTableView.swift in Sources */,
+				C7C1AE882091260C00922041 /* KiipNativeView.swift in Sources */,
 				C73124A2208E96EA00DD5AC7 /* ViewController.swift in Sources */,
 				C73124A0208E96EA00DD5AC7 /* AppDelegate.swift in Sources */,
 			);
