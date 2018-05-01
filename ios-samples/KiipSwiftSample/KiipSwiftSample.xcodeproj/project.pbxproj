@@ -12,9 +12,6 @@
 		C73124A5208E96EA00DD5AC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73124A3208E96EA00DD5AC7 /* Main.storyboard */; };
 		C73124A7208E96EA00DD5AC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C73124A6208E96EA00DD5AC7 /* Assets.xcassets */; };
 		C73124AA208E96EA00DD5AC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73124A8208E96EA00DD5AC7 /* LaunchScreen.storyboard */; };
-		C73124B4208E97B300DD5AC7 /* KIIPMoatMobileAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73124B1208E97B300DD5AC7 /* KIIPMoatMobileAppKit.framework */; };
-		C73124B5208E97B300DD5AC7 /* KiipSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73124B2208E97B300DD5AC7 /* KiipSDK.framework */; };
-		C73124B6208E97B300DD5AC7 /* XIDLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73124B3208E97B300DD5AC7 /* XIDLibrary.framework */; };
 		C73124B9208E97E700DD5AC7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73124B8208E97E700DD5AC7 /* SystemConfiguration.framework */; };
 		C73124BB208E97F000DD5AC7 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73124BA208E97EF00DD5AC7 /* AdSupport.framework */; };
 		C73124BD208E982600DD5AC7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73124BC208E982500DD5AC7 /* QuartzCore.framework */; };
@@ -22,9 +19,12 @@
 		C73124C1208E983100DD5AC7 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73124C0208E983100DD5AC7 /* SafariServices.framework */; };
 		C73124C3208E983A00DD5AC7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73124C2208E983A00DD5AC7 /* CoreLocation.framework */; };
 		C73124C5208E983F00DD5AC7 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73124C4208E983F00DD5AC7 /* CoreTelephony.framework */; };
-		C73124C6208E98C400DD5AC7 /* XIDLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73124B3208E97B300DD5AC7 /* XIDLibrary.framework */; };
-		C73124C7208E98C400DD5AC7 /* XIDLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C73124B3208E97B300DD5AC7 /* XIDLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C73124CE208E99AA00DD5AC7 /* KiipSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C73124CD208E99AA00DD5AC7 /* KiipSDKResources.bundle */; };
+		C746F9452098E1860012A81D /* KiipSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C746F9412098E1850012A81D /* KiipSDKResources.bundle */; };
+		C746F9462098E1860012A81D /* KIIPMoatMobileAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C746F9422098E1850012A81D /* KIIPMoatMobileAppKit.framework */; };
+		C746F9472098E1860012A81D /* KiipSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C746F9432098E1860012A81D /* KiipSDK.framework */; };
+		C746F9482098E1860012A81D /* XIDLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C746F9442098E1860012A81D /* XIDLibrary.framework */; };
+		C746F9492098E1980012A81D /* XIDLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C746F9442098E1860012A81D /* XIDLibrary.framework */; };
+		C746F94A2098E1980012A81D /* XIDLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C746F9442098E1860012A81D /* XIDLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7C1AE862090F1CF00922041 /* KiipTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C1AE852090F1CF00922041 /* KiipTableView.swift */; };
 		C7C1AE882091260C00922041 /* KiipNativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C1AE872091260C00922041 /* KiipNativeView.swift */; };
 /* End PBXBuildFile section */
@@ -36,7 +36,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C73124C7208E98C400DD5AC7 /* XIDLibrary.framework in Embed Frameworks */,
+				C746F94A2098E1980012A81D /* XIDLibrary.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,9 +51,6 @@
 		C73124A6208E96EA00DD5AC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C73124A9208E96EA00DD5AC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C73124AB208E96EA00DD5AC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C73124B1208E97B300DD5AC7 /* KIIPMoatMobileAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KIIPMoatMobileAppKit.framework; sourceTree = "<group>"; };
-		C73124B2208E97B300DD5AC7 /* KiipSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KiipSDK.framework; sourceTree = "<group>"; };
-		C73124B3208E97B300DD5AC7 /* XIDLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XIDLibrary.framework; sourceTree = "<group>"; };
 		C73124B8208E97E700DD5AC7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C73124BA208E97EF00DD5AC7 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		C73124BC208E982500DD5AC7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -61,8 +58,11 @@
 		C73124C0208E983100DD5AC7 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		C73124C2208E983A00DD5AC7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C73124C4208E983F00DD5AC7 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		C73124CD208E99AA00DD5AC7 /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KiipSDKResources.bundle; sourceTree = "<group>"; };
 		C73124D0208E9C6900DD5AC7 /* KiipSwiftSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KiipSwiftSample-Bridging-Header.h"; sourceTree = "<group>"; };
+		C746F9412098E1850012A81D /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KiipSDKResources.bundle; sourceTree = "<group>"; };
+		C746F9422098E1850012A81D /* KIIPMoatMobileAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KIIPMoatMobileAppKit.framework; sourceTree = "<group>"; };
+		C746F9432098E1860012A81D /* KiipSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KiipSDK.framework; sourceTree = "<group>"; };
+		C746F9442098E1860012A81D /* XIDLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XIDLibrary.framework; sourceTree = "<group>"; };
 		C7C1AE852090F1CF00922041 /* KiipTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiipTableView.swift; sourceTree = "<group>"; };
 		C7C1AE872091260C00922041 /* KiipNativeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiipNativeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,16 +73,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C73124BB208E97F000DD5AC7 /* AdSupport.framework in Frameworks */,
+				C746F9462098E1860012A81D /* KIIPMoatMobileAppKit.framework in Frameworks */,
 				C73124C5208E983F00DD5AC7 /* CoreTelephony.framework in Frameworks */,
 				C73124C3208E983A00DD5AC7 /* CoreLocation.framework in Frameworks */,
 				C73124C1208E983100DD5AC7 /* SafariServices.framework in Frameworks */,
 				C73124BF208E982C00DD5AC7 /* WebKit.framework in Frameworks */,
+				C746F9482098E1860012A81D /* XIDLibrary.framework in Frameworks */,
 				C73124BD208E982600DD5AC7 /* QuartzCore.framework in Frameworks */,
+				C746F9492098E1980012A81D /* XIDLibrary.framework in Frameworks */,
 				C73124B9208E97E700DD5AC7 /* SystemConfiguration.framework in Frameworks */,
-				C73124B5208E97B300DD5AC7 /* KiipSDK.framework in Frameworks */,
-				C73124C6208E98C400DD5AC7 /* XIDLibrary.framework in Frameworks */,
-				C73124B4208E97B300DD5AC7 /* KIIPMoatMobileAppKit.framework in Frameworks */,
-				C73124B6208E97B300DD5AC7 /* XIDLibrary.framework in Frameworks */,
+				C746F9472098E1860012A81D /* KiipSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,10 +92,10 @@
 		C7312493208E96EA00DD5AC7 = {
 			isa = PBXGroup;
 			children = (
-				C73124CD208E99AA00DD5AC7 /* KiipSDKResources.bundle */,
-				C73124B1208E97B300DD5AC7 /* KIIPMoatMobileAppKit.framework */,
-				C73124B2208E97B300DD5AC7 /* KiipSDK.framework */,
-				C73124B3208E97B300DD5AC7 /* XIDLibrary.framework */,
+				C746F9422098E1850012A81D /* KIIPMoatMobileAppKit.framework */,
+				C746F9432098E1860012A81D /* KiipSDK.framework */,
+				C746F9412098E1850012A81D /* KiipSDKResources.bundle */,
+				C746F9442098E1860012A81D /* XIDLibrary.framework */,
 				C731249E208E96EA00DD5AC7 /* KiipSwiftSample */,
 				C731249D208E96EA00DD5AC7 /* Products */,
 				C73124B7208E97E700DD5AC7 /* Frameworks */,
@@ -200,8 +200,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C73124CE208E99AA00DD5AC7 /* KiipSDKResources.bundle in Resources */,
 				C73124AA208E96EA00DD5AC7 /* LaunchScreen.storyboard in Resources */,
+				C746F9452098E1860012A81D /* KiipSDKResources.bundle in Resources */,
 				C73124A7208E96EA00DD5AC7 /* Assets.xcassets in Resources */,
 				C73124A5208E96EA00DD5AC7 /* Main.storyboard in Resources */,
 			);

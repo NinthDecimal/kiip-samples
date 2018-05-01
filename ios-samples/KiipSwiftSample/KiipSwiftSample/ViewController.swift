@@ -29,6 +29,9 @@ class ViewController: UIViewController {
         if (sender == btnSaveMoment) {
             Kiip.sharedInstance().saveMoment("<Your Moment ID>") { (poptart, error) -> Void in
                 //check if there is a reward
+                if (error != nil) {
+                    NSLog("test", "failed")
+                }
                 if (poptart != nil) {
                     poptart?.show()
                 }
@@ -58,5 +61,6 @@ class ViewController: UIViewController {
         showTableView.titleEdgeInsets = UIEdgeInsets.init(top: 2, left: 2, bottom: 2, right: 2)
     }
     
+
 }
 

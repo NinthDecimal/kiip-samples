@@ -49,19 +49,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate, KiipDelegate {
 
     //MARK:-- KiipDelegates --
     
-    private func kiip(kiip:Kiip, didStartSessionWithPoptart poptart:KPPoptart, error:NSError) {
-        print("kiip:didStartSessionWithPoptart: \(error.localizedDescription)")
+    func kiip(_ kiip: Kiip!, didStartSessionWith poptart: KPPoptart!, error: Error!) {
+        if (error != nil) {
+            print("kiip:didStartSessionWithPoptart: \(error.localizedDescription)")
+        }
     }
     
-    private func kiip(kiip:Kiip, didEndSessionWithError error:NSError) {
-        print("kiip:didStartSessionWithPoptart: \(error.localizedDescription)")
+    func kiip(_ kiip: Kiip!, didEndSessionWithError error: Error!) {
+        if (error != nil) {
+            print("kiip:didStartSessionWithPoptart: \(error.localizedDescription)")
+        }
     }
     
-    func kiip(kiip:Kiip, contentId:NSString, quantity:Int, transactionId:NSString, signature:NSString) {
-        print("kiip:didReceiveContent:\(contentId) quantity:\(quantity) transactionId:\(transactionId) signature:\(signature)");
+    func kiip(_ kiip: Kiip!, didReceiveContent content: String!, quantity: Int32, transactionId: String!, signature: String!) {
+        print("kiip:didReceiveContent:\(content) quantity:\(quantity) transactionId:\(transactionId) signature:\(signature)");
         // Add quantity amount of content to player's profile
         // e.g +20 coins to user's wallet
         // http://docs.kiip.com/en/guide/android.html#getting_virtual_rewards
     }
+   
 }
 
