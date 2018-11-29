@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4AA91C1C21AE948600CC7E70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA91C1B21AE948600CC7E70 /* AppDelegate.m */; };
+		4AA91C1F21AE948600CC7E70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA91C1E21AE948600CC7E70 /* ViewController.m */; };
+		4AA91C2221AE948600CC7E70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA91C2021AE948600CC7E70 /* Main.storyboard */; };
+		4AA91C2421AE948800CC7E70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA91C2321AE948800CC7E70 /* Assets.xcassets */; };
+		4AA91C2721AE948800CC7E70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA91C2521AE948800CC7E70 /* LaunchScreen.storyboard */; };
+		4AA91C2A21AE948800CC7E70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA91C2921AE948800CC7E70 /* main.m */; };
+		4AA91C3421AE948800CC7E70 /* KiipObjCSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA91C3321AE948800CC7E70 /* KiipObjCSampleTests.m */; };
+		4AA91C3F21AE948800CC7E70 /* KiipObjCSampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA91C3E21AE948800CC7E70 /* KiipObjCSampleUITests.m */; };
+		4AA91C6821AE962800CC7E70 /* KiipSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4AA91C6321AE962800CC7E70 /* KiipSDKResources.bundle */; };
+		4AA91C6921AE962800CC7E70 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 4AA91C6421AE962800CC7E70 /* CHANGELOG.md */; };
+		4AA91C6A21AE962800CC7E70 /* KiipSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA91C6521AE962800CC7E70 /* KiipSDK.framework */; };
+		4AA91C6B21AE962800CC7E70 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4AA91C6621AE962800CC7E70 /* README.md */; };
+		4AA91C6C21AE962800CC7E70 /* KIIPMoatMobileAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA91C6721AE962800CC7E70 /* KIIPMoatMobileAppKit.framework */; };
+		4AA91C7021AEA66B00CC7E70 /* KPCustomNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA91C6E21AEA66B00CC7E70 /* KPCustomNotificationView.m */; };
+		4AA91C7321AEB98400CC7E70 /* KiipNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA91C7221AEB98400CC7E70 /* KiipNativeViewController.m */; };
+		4AA91C7621AEB9AC00CC7E70 /* KiipTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA91C7521AEB9AC00CC7E70 /* KiipTableViewController.m */; };
+		4ABFB34221AFFEB3000FF546 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ABFB34121AFFEB3000FF546 /* logo.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4AA91C3021AE948800CC7E70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AA91C0F21AE948600CC7E70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AA91C1621AE948600CC7E70;
+			remoteInfo = KiipObjCSample;
+		};
+		4AA91C3B21AE948800CC7E70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AA91C0F21AE948600CC7E70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AA91C1621AE948600CC7E70;
+			remoteInfo = KiipObjCSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4AA91C1721AE948600CC7E70 /* KiipObjCSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KiipObjCSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AA91C1A21AE948600CC7E70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4AA91C1B21AE948600CC7E70 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4AA91C1D21AE948600CC7E70 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4AA91C1E21AE948600CC7E70 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4AA91C2121AE948600CC7E70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4AA91C2321AE948800CC7E70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AA91C2621AE948800CC7E70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4AA91C2821AE948800CC7E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AA91C2921AE948800CC7E70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4AA91C2F21AE948800CC7E70 /* KiipObjCSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KiipObjCSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AA91C3321AE948800CC7E70 /* KiipObjCSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KiipObjCSampleTests.m; sourceTree = "<group>"; };
+		4AA91C3521AE948800CC7E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AA91C3A21AE948800CC7E70 /* KiipObjCSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KiipObjCSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AA91C3E21AE948800CC7E70 /* KiipObjCSampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KiipObjCSampleUITests.m; sourceTree = "<group>"; };
+		4AA91C4021AE948800CC7E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AA91C6321AE962800CC7E70 /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KiipSDKResources.bundle; sourceTree = "<group>"; };
+		4AA91C6421AE962800CC7E70 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		4AA91C6521AE962800CC7E70 /* KiipSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KiipSDK.framework; sourceTree = "<group>"; };
+		4AA91C6621AE962800CC7E70 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4AA91C6721AE962800CC7E70 /* KIIPMoatMobileAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KIIPMoatMobileAppKit.framework; sourceTree = "<group>"; };
+		4AA91C6E21AEA66B00CC7E70 /* KPCustomNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPCustomNotificationView.m; sourceTree = "<group>"; };
+		4AA91C6F21AEA66B00CC7E70 /* KPCustomNotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPCustomNotificationView.h; sourceTree = "<group>"; };
+		4AA91C7121AEB98400CC7E70 /* KiipNativeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KiipNativeViewController.h; sourceTree = "<group>"; };
+		4AA91C7221AEB98400CC7E70 /* KiipNativeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KiipNativeViewController.m; sourceTree = "<group>"; };
+		4AA91C7421AEB9AC00CC7E70 /* KiipTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KiipTableViewController.h; sourceTree = "<group>"; };
+		4AA91C7521AEB9AC00CC7E70 /* KiipTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KiipTableViewController.m; sourceTree = "<group>"; };
+		4ABFB34121AFFEB3000FF546 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AA91C1421AE948600CC7E70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA91C6A21AE962800CC7E70 /* KiipSDK.framework in Frameworks */,
+				4AA91C6C21AE962800CC7E70 /* KIIPMoatMobileAppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA91C2C21AE948800CC7E70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA91C3721AE948800CC7E70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4AA91C0E21AE948600CC7E70 = {
+			isa = PBXGroup;
+			children = (
+				4ABFB34121AFFEB3000FF546 /* logo.png */,
+				4AA91C6221AE962800CC7E70 /* KiipSDK */,
+				4AA91C1921AE948600CC7E70 /* KiipObjCSample */,
+				4AA91C3221AE948800CC7E70 /* KiipObjCSampleTests */,
+				4AA91C3D21AE948800CC7E70 /* KiipObjCSampleUITests */,
+				4AA91C1821AE948600CC7E70 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4AA91C1821AE948600CC7E70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AA91C1721AE948600CC7E70 /* KiipObjCSample.app */,
+				4AA91C2F21AE948800CC7E70 /* KiipObjCSampleTests.xctest */,
+				4AA91C3A21AE948800CC7E70 /* KiipObjCSampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AA91C1921AE948600CC7E70 /* KiipObjCSample */ = {
+			isa = PBXGroup;
+			children = (
+				4AA91C1A21AE948600CC7E70 /* AppDelegate.h */,
+				4AA91C1B21AE948600CC7E70 /* AppDelegate.m */,
+				4AA91C1D21AE948600CC7E70 /* ViewController.h */,
+				4AA91C1E21AE948600CC7E70 /* ViewController.m */,
+				4AA91C7121AEB98400CC7E70 /* KiipNativeViewController.h */,
+				4AA91C7221AEB98400CC7E70 /* KiipNativeViewController.m */,
+				4AA91C7421AEB9AC00CC7E70 /* KiipTableViewController.h */,
+				4AA91C7521AEB9AC00CC7E70 /* KiipTableViewController.m */,
+				4AA91C6D21AEA58E00CC7E70 /* CustomNotification */,
+				4AA91C2021AE948600CC7E70 /* Main.storyboard */,
+				4AA91C2321AE948800CC7E70 /* Assets.xcassets */,
+				4AA91C2521AE948800CC7E70 /* LaunchScreen.storyboard */,
+				4AA91C2821AE948800CC7E70 /* Info.plist */,
+				4AA91C2921AE948800CC7E70 /* main.m */,
+			);
+			path = KiipObjCSample;
+			sourceTree = "<group>";
+		};
+		4AA91C3221AE948800CC7E70 /* KiipObjCSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				4AA91C3321AE948800CC7E70 /* KiipObjCSampleTests.m */,
+				4AA91C3521AE948800CC7E70 /* Info.plist */,
+			);
+			path = KiipObjCSampleTests;
+			sourceTree = "<group>";
+		};
+		4AA91C3D21AE948800CC7E70 /* KiipObjCSampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4AA91C3E21AE948800CC7E70 /* KiipObjCSampleUITests.m */,
+				4AA91C4021AE948800CC7E70 /* Info.plist */,
+			);
+			path = KiipObjCSampleUITests;
+			sourceTree = "<group>";
+		};
+		4AA91C6221AE962800CC7E70 /* KiipSDK */ = {
+			isa = PBXGroup;
+			children = (
+				4AA91C6321AE962800CC7E70 /* KiipSDKResources.bundle */,
+				4AA91C6421AE962800CC7E70 /* CHANGELOG.md */,
+				4AA91C6521AE962800CC7E70 /* KiipSDK.framework */,
+				4AA91C6621AE962800CC7E70 /* README.md */,
+				4AA91C6721AE962800CC7E70 /* KIIPMoatMobileAppKit.framework */,
+			);
+			name = KiipSDK;
+			path = ../KiipSDK;
+			sourceTree = "<group>";
+		};
+		4AA91C6D21AEA58E00CC7E70 /* CustomNotification */ = {
+			isa = PBXGroup;
+			children = (
+				4AA91C6F21AEA66B00CC7E70 /* KPCustomNotificationView.h */,
+				4AA91C6E21AEA66B00CC7E70 /* KPCustomNotificationView.m */,
+			);
+			path = CustomNotification;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AA91C1621AE948600CC7E70 /* KiipObjCSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AA91C4321AE948800CC7E70 /* Build configuration list for PBXNativeTarget "KiipObjCSample" */;
+			buildPhases = (
+				4AA91C1321AE948600CC7E70 /* Sources */,
+				4AA91C1421AE948600CC7E70 /* Frameworks */,
+				4AA91C1521AE948600CC7E70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KiipObjCSample;
+			productName = KiipObjCSample;
+			productReference = 4AA91C1721AE948600CC7E70 /* KiipObjCSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4AA91C2E21AE948800CC7E70 /* KiipObjCSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AA91C4621AE948800CC7E70 /* Build configuration list for PBXNativeTarget "KiipObjCSampleTests" */;
+			buildPhases = (
+				4AA91C2B21AE948800CC7E70 /* Sources */,
+				4AA91C2C21AE948800CC7E70 /* Frameworks */,
+				4AA91C2D21AE948800CC7E70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AA91C3121AE948800CC7E70 /* PBXTargetDependency */,
+			);
+			name = KiipObjCSampleTests;
+			productName = KiipObjCSampleTests;
+			productReference = 4AA91C2F21AE948800CC7E70 /* KiipObjCSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4AA91C3921AE948800CC7E70 /* KiipObjCSampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AA91C4921AE948800CC7E70 /* Build configuration list for PBXNativeTarget "KiipObjCSampleUITests" */;
+			buildPhases = (
+				4AA91C3621AE948800CC7E70 /* Sources */,
+				4AA91C3721AE948800CC7E70 /* Frameworks */,
+				4AA91C3821AE948800CC7E70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AA91C3C21AE948800CC7E70 /* PBXTargetDependency */,
+			);
+			name = KiipObjCSampleUITests;
+			productName = KiipObjCSampleUITests;
+			productReference = 4AA91C3A21AE948800CC7E70 /* KiipObjCSampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AA91C0F21AE948600CC7E70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Kiip;
+				TargetAttributes = {
+					4AA91C1621AE948600CC7E70 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					4AA91C2E21AE948800CC7E70 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 4AA91C1621AE948600CC7E70;
+					};
+					4AA91C3921AE948800CC7E70 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 4AA91C1621AE948600CC7E70;
+					};
+				};
+			};
+			buildConfigurationList = 4AA91C1221AE948600CC7E70 /* Build configuration list for PBXProject "KiipObjCSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4AA91C0E21AE948600CC7E70;
+			productRefGroup = 4AA91C1821AE948600CC7E70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AA91C1621AE948600CC7E70 /* KiipObjCSample */,
+				4AA91C2E21AE948800CC7E70 /* KiipObjCSampleTests */,
+				4AA91C3921AE948800CC7E70 /* KiipObjCSampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AA91C1521AE948600CC7E70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ABFB34221AFFEB3000FF546 /* logo.png in Resources */,
+				4AA91C6B21AE962800CC7E70 /* README.md in Resources */,
+				4AA91C2721AE948800CC7E70 /* LaunchScreen.storyboard in Resources */,
+				4AA91C6921AE962800CC7E70 /* CHANGELOG.md in Resources */,
+				4AA91C6821AE962800CC7E70 /* KiipSDKResources.bundle in Resources */,
+				4AA91C2421AE948800CC7E70 /* Assets.xcassets in Resources */,
+				4AA91C2221AE948600CC7E70 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA91C2D21AE948800CC7E70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA91C3821AE948800CC7E70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AA91C1321AE948600CC7E70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA91C1F21AE948600CC7E70 /* ViewController.m in Sources */,
+				4AA91C7021AEA66B00CC7E70 /* KPCustomNotificationView.m in Sources */,
+				4AA91C7321AEB98400CC7E70 /* KiipNativeViewController.m in Sources */,
+				4AA91C2A21AE948800CC7E70 /* main.m in Sources */,
+				4AA91C7621AEB9AC00CC7E70 /* KiipTableViewController.m in Sources */,
+				4AA91C1C21AE948600CC7E70 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA91C2B21AE948800CC7E70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA91C3421AE948800CC7E70 /* KiipObjCSampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA91C3621AE948800CC7E70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA91C3F21AE948800CC7E70 /* KiipObjCSampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4AA91C3121AE948800CC7E70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AA91C1621AE948600CC7E70 /* KiipObjCSample */;
+			targetProxy = 4AA91C3021AE948800CC7E70 /* PBXContainerItemProxy */;
+		};
+		4AA91C3C21AE948800CC7E70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AA91C1621AE948600CC7E70 /* KiipObjCSample */;
+			targetProxy = 4AA91C3B21AE948800CC7E70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4AA91C2021AE948600CC7E70 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AA91C2121AE948600CC7E70 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4AA91C2521AE948800CC7E70 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AA91C2621AE948800CC7E70 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4AA91C4121AE948800CC7E70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4AA91C4221AE948800CC7E70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4AA91C4421AE948800CC7E70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3883BCEFXL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KiipSDK",
+					"\"$(SRCROOT)/../KiipSDK\"",
+				);
+				INFOPLIST_FILE = KiipObjCSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiip.kiipObjC.KiipObjCSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4AA91C4521AE948800CC7E70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3883BCEFXL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KiipSDK",
+					"\"$(SRCROOT)/../KiipSDK\"",
+				);
+				INFOPLIST_FILE = KiipObjCSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiip.kiipObjC.KiipObjCSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4AA91C4721AE948800CC7E70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3883BCEFXL;
+				INFOPLIST_FILE = KiipObjCSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiip.kiipObjC.KiipObjCSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KiipObjCSample.app/KiipObjCSample";
+			};
+			name = Debug;
+		};
+		4AA91C4821AE948800CC7E70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3883BCEFXL;
+				INFOPLIST_FILE = KiipObjCSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiip.kiipObjC.KiipObjCSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KiipObjCSample.app/KiipObjCSample";
+			};
+			name = Release;
+		};
+		4AA91C4A21AE948800CC7E70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3883BCEFXL;
+				INFOPLIST_FILE = KiipObjCSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiip.kiipObjC.KiipObjCSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KiipObjCSample;
+			};
+			name = Debug;
+		};
+		4AA91C4B21AE948800CC7E70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3883BCEFXL;
+				INFOPLIST_FILE = KiipObjCSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiip.kiipObjC.KiipObjCSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KiipObjCSample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4AA91C1221AE948600CC7E70 /* Build configuration list for PBXProject "KiipObjCSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA91C4121AE948800CC7E70 /* Debug */,
+				4AA91C4221AE948800CC7E70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AA91C4321AE948800CC7E70 /* Build configuration list for PBXNativeTarget "KiipObjCSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA91C4421AE948800CC7E70 /* Debug */,
+				4AA91C4521AE948800CC7E70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AA91C4621AE948800CC7E70 /* Build configuration list for PBXNativeTarget "KiipObjCSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA91C4721AE948800CC7E70 /* Debug */,
+				4AA91C4821AE948800CC7E70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AA91C4921AE948800CC7E70 /* Build configuration list for PBXNativeTarget "KiipObjCSampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA91C4A21AE948800CC7E70 /* Debug */,
+				4AA91C4B21AE948800CC7E70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4AA91C0F21AE948600CC7E70 /* Project object */;
+}
