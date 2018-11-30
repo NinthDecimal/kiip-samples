@@ -496,7 +496,6 @@
 				DEVELOPMENT_TEAM = 3883BCEFXL;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/KiipSDK",
 					"\"$(SRCROOT)/../KiipSDK\"",
 				);
 				INFOPLIST_FILE = KiipObjCSample/Info.plist;
@@ -519,7 +518,6 @@
 				DEVELOPMENT_TEAM = 3883BCEFXL;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/KiipSDK",
 					"\"$(SRCROOT)/../KiipSDK\"",
 				);
 				INFOPLIST_FILE = KiipObjCSample/Info.plist;
