@@ -3,154 +3,183 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C73124A0208E96EA00DD5AC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C731249F208E96EA00DD5AC7 /* AppDelegate.swift */; };
-		C73124A2208E96EA00DD5AC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73124A1208E96EA00DD5AC7 /* ViewController.swift */; };
-		C73124A5208E96EA00DD5AC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73124A3208E96EA00DD5AC7 /* Main.storyboard */; };
-		C73124A7208E96EA00DD5AC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C73124A6208E96EA00DD5AC7 /* Assets.xcassets */; };
-		C73124AA208E96EA00DD5AC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73124A8208E96EA00DD5AC7 /* LaunchScreen.storyboard */; };
-		C73124B9208E97E700DD5AC7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73124B8208E97E700DD5AC7 /* SystemConfiguration.framework */; };
-		C73124BB208E97F000DD5AC7 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73124BA208E97EF00DD5AC7 /* AdSupport.framework */; };
-		C73124BD208E982600DD5AC7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73124BC208E982500DD5AC7 /* QuartzCore.framework */; };
-		C73124BF208E982C00DD5AC7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73124BE208E982B00DD5AC7 /* WebKit.framework */; };
-		C73124C1208E983100DD5AC7 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73124C0208E983100DD5AC7 /* SafariServices.framework */; };
-		C73124C3208E983A00DD5AC7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73124C2208E983A00DD5AC7 /* CoreLocation.framework */; };
-		C73124C5208E983F00DD5AC7 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73124C4208E983F00DD5AC7 /* CoreTelephony.framework */; };
-		C746F9452098E1860012A81D /* KiipSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C746F9412098E1850012A81D /* KiipSDKResources.bundle */; };
-		C746F9462098E1860012A81D /* KIIPMoatMobileAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C746F9422098E1850012A81D /* KIIPMoatMobileAppKit.framework */; };
-		C746F9472098E1860012A81D /* KiipSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C746F9432098E1860012A81D /* KiipSDK.framework */; };
-		C746F9482098E1860012A81D /* XIDLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C746F9442098E1860012A81D /* XIDLibrary.framework */; };
-		C746F9492098E1980012A81D /* XIDLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C746F9442098E1860012A81D /* XIDLibrary.framework */; };
-		C746F94A2098E1980012A81D /* XIDLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C746F9442098E1860012A81D /* XIDLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C7C1AE862090F1CF00922041 /* KiipTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C1AE852090F1CF00922041 /* KiipTableView.swift */; };
-		C7C1AE882091260C00922041 /* KiipNativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C1AE872091260C00922041 /* KiipNativeView.swift */; };
+		4AD52AE221B0F68C00F64F09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD52AE121B0F68C00F64F09 /* AppDelegate.swift */; };
+		4AD52AE421B0F68C00F64F09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD52AE321B0F68C00F64F09 /* ViewController.swift */; };
+		4AD52AE721B0F68C00F64F09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AD52AE521B0F68C00F64F09 /* Main.storyboard */; };
+		4AD52AE921B0F68D00F64F09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AD52AE821B0F68D00F64F09 /* Assets.xcassets */; };
+		4AD52AEC21B0F68D00F64F09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AD52AEA21B0F68D00F64F09 /* LaunchScreen.storyboard */; };
+		4AD52AF721B0F68D00F64F09 /* KiipSwiftSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD52AF621B0F68D00F64F09 /* KiipSwiftSampleTests.swift */; };
+		4AD52B0221B0F68D00F64F09 /* KiipSwiftSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD52B0121B0F68D00F64F09 /* KiipSwiftSampleUITests.swift */; };
+		4AD52B1521B0F8FF00F64F09 /* KiipSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD52B1021B0F8FE00F64F09 /* KiipSDK.framework */; };
+		4AD52B1621B0F8FF00F64F09 /* KIIPMoatMobileAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD52B1121B0F8FE00F64F09 /* KIIPMoatMobileAppKit.framework */; };
+		4AD52B1721B0F8FF00F64F09 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 4AD52B1221B0F8FF00F64F09 /* CHANGELOG.md */; };
+		4AD52B1821B0F8FF00F64F09 /* KiipSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4AD52B1321B0F8FF00F64F09 /* KiipSDKResources.bundle */; };
+		4AD52B1921B0F8FF00F64F09 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4AD52B1421B0F8FF00F64F09 /* README.md */; };
+		4AD52B1B21B0F92E00F64F09 /* KiipNativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD52B1A21B0F92E00F64F09 /* KiipNativeViewController.swift */; };
+		4AD52B1D21B0F95400F64F09 /* KiipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD52B1C21B0F95400F64F09 /* KiipTableViewController.swift */; };
+		4AD52B2021B118D400F64F09 /* KPCustomNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD52B1F21B118D400F64F09 /* KPCustomNotificationView.swift */; };
+		4AD52B2221B152E100F64F09 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD52B2121B152E100F64F09 /* logo.png */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		C73124C8208E98C500DD5AC7 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				C746F94A2098E1980012A81D /* XIDLibrary.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
+/* Begin PBXContainerItemProxy section */
+		4AD52AF321B0F68D00F64F09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AD52AD621B0F68B00F64F09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AD52ADD21B0F68B00F64F09;
+			remoteInfo = KiipSwiftSample;
 		};
-/* End PBXCopyFilesBuildPhase section */
+		4AD52AFE21B0F68D00F64F09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AD52AD621B0F68B00F64F09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AD52ADD21B0F68B00F64F09;
+			remoteInfo = KiipSwiftSample;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C731249C208E96EA00DD5AC7 /* KiipSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KiipSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C731249F208E96EA00DD5AC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C73124A1208E96EA00DD5AC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C73124A4208E96EA00DD5AC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C73124A6208E96EA00DD5AC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C73124A9208E96EA00DD5AC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C73124AB208E96EA00DD5AC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C73124B8208E97E700DD5AC7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		C73124BA208E97EF00DD5AC7 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		C73124BC208E982500DD5AC7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		C73124BE208E982B00DD5AC7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		C73124C0208E983100DD5AC7 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
-		C73124C2208E983A00DD5AC7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		C73124C4208E983F00DD5AC7 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		C73124D0208E9C6900DD5AC7 /* KiipSwiftSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KiipSwiftSample-Bridging-Header.h"; sourceTree = "<group>"; };
-		C746F9412098E1850012A81D /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KiipSDKResources.bundle; sourceTree = "<group>"; };
-		C746F9422098E1850012A81D /* KIIPMoatMobileAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KIIPMoatMobileAppKit.framework; sourceTree = "<group>"; };
-		C746F9432098E1860012A81D /* KiipSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KiipSDK.framework; sourceTree = "<group>"; };
-		C746F9442098E1860012A81D /* XIDLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XIDLibrary.framework; sourceTree = "<group>"; };
-		C7C1AE852090F1CF00922041 /* KiipTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiipTableView.swift; sourceTree = "<group>"; };
-		C7C1AE872091260C00922041 /* KiipNativeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiipNativeView.swift; sourceTree = "<group>"; };
+		4AD52ADE21B0F68C00F64F09 /* KiipSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KiipSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AD52AE121B0F68C00F64F09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4AD52AE321B0F68C00F64F09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4AD52AE621B0F68C00F64F09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4AD52AE821B0F68D00F64F09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AD52AEB21B0F68D00F64F09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4AD52AED21B0F68D00F64F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AD52AF221B0F68D00F64F09 /* KiipSwiftSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KiipSwiftSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AD52AF621B0F68D00F64F09 /* KiipSwiftSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiipSwiftSampleTests.swift; sourceTree = "<group>"; };
+		4AD52AF821B0F68D00F64F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AD52AFD21B0F68D00F64F09 /* KiipSwiftSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KiipSwiftSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AD52B0121B0F68D00F64F09 /* KiipSwiftSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiipSwiftSampleUITests.swift; sourceTree = "<group>"; };
+		4AD52B0321B0F68D00F64F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AD52B1021B0F8FE00F64F09 /* KiipSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KiipSDK.framework; path = ../../KiipSDK/KiipSDK.framework; sourceTree = "<group>"; };
+		4AD52B1121B0F8FE00F64F09 /* KIIPMoatMobileAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KIIPMoatMobileAppKit.framework; path = ../../KiipSDK/KIIPMoatMobileAppKit.framework; sourceTree = "<group>"; };
+		4AD52B1221B0F8FF00F64F09 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../../KiipSDK/CHANGELOG.md; sourceTree = "<group>"; };
+		4AD52B1321B0F8FF00F64F09 /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KiipSDKResources.bundle; path = ../../KiipSDK/KiipSDKResources.bundle; sourceTree = "<group>"; };
+		4AD52B1421B0F8FF00F64F09 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../KiipSDK/README.md; sourceTree = "<group>"; };
+		4AD52B1A21B0F92E00F64F09 /* KiipNativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiipNativeViewController.swift; sourceTree = "<group>"; };
+		4AD52B1C21B0F95400F64F09 /* KiipTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiipTableViewController.swift; sourceTree = "<group>"; };
+		4AD52B1F21B118D400F64F09 /* KPCustomNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPCustomNotificationView.swift; sourceTree = "<group>"; };
+		4AD52B2121B152E100F64F09 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C7312499208E96EA00DD5AC7 /* Frameworks */ = {
+		4AD52ADB21B0F68B00F64F09 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C73124BB208E97F000DD5AC7 /* AdSupport.framework in Frameworks */,
-				C746F9462098E1860012A81D /* KIIPMoatMobileAppKit.framework in Frameworks */,
-				C73124C5208E983F00DD5AC7 /* CoreTelephony.framework in Frameworks */,
-				C73124C3208E983A00DD5AC7 /* CoreLocation.framework in Frameworks */,
-				C73124C1208E983100DD5AC7 /* SafariServices.framework in Frameworks */,
-				C73124BF208E982C00DD5AC7 /* WebKit.framework in Frameworks */,
-				C746F9482098E1860012A81D /* XIDLibrary.framework in Frameworks */,
-				C73124BD208E982600DD5AC7 /* QuartzCore.framework in Frameworks */,
-				C746F9492098E1980012A81D /* XIDLibrary.framework in Frameworks */,
-				C73124B9208E97E700DD5AC7 /* SystemConfiguration.framework in Frameworks */,
-				C746F9472098E1860012A81D /* KiipSDK.framework in Frameworks */,
+				4AD52B1521B0F8FF00F64F09 /* KiipSDK.framework in Frameworks */,
+				4AD52B1621B0F8FF00F64F09 /* KIIPMoatMobileAppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AD52AEF21B0F68D00F64F09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AD52AFA21B0F68D00F64F09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C7312493208E96EA00DD5AC7 = {
+		4AD52AD521B0F68B00F64F09 = {
 			isa = PBXGroup;
 			children = (
-				C746F9422098E1850012A81D /* KIIPMoatMobileAppKit.framework */,
-				C746F9432098E1860012A81D /* KiipSDK.framework */,
-				C746F9412098E1850012A81D /* KiipSDKResources.bundle */,
-				C746F9442098E1860012A81D /* XIDLibrary.framework */,
-				C731249E208E96EA00DD5AC7 /* KiipSwiftSample */,
-				C731249D208E96EA00DD5AC7 /* Products */,
-				C73124B7208E97E700DD5AC7 /* Frameworks */,
+				4AD52B2121B152E100F64F09 /* logo.png */,
+				4AD52B0F21B0F8E600F64F09 /* KiipSDK */,
+				4AD52AE021B0F68C00F64F09 /* KiipSwiftSample */,
+				4AD52AF521B0F68D00F64F09 /* KiipSwiftSampleTests */,
+				4AD52B0021B0F68D00F64F09 /* KiipSwiftSampleUITests */,
+				4AD52ADF21B0F68C00F64F09 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C731249D208E96EA00DD5AC7 /* Products */ = {
+		4AD52ADF21B0F68C00F64F09 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C731249C208E96EA00DD5AC7 /* KiipSwiftSample.app */,
+				4AD52ADE21B0F68C00F64F09 /* KiipSwiftSample.app */,
+				4AD52AF221B0F68D00F64F09 /* KiipSwiftSampleTests.xctest */,
+				4AD52AFD21B0F68D00F64F09 /* KiipSwiftSampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C731249E208E96EA00DD5AC7 /* KiipSwiftSample */ = {
+		4AD52AE021B0F68C00F64F09 /* KiipSwiftSample */ = {
 			isa = PBXGroup;
 			children = (
-				C731249F208E96EA00DD5AC7 /* AppDelegate.swift */,
-				C73124A1208E96EA00DD5AC7 /* ViewController.swift */,
-				C7C1AE872091260C00922041 /* KiipNativeView.swift */,
-				C7C1AE852090F1CF00922041 /* KiipTableView.swift */,
-				C73124A3208E96EA00DD5AC7 /* Main.storyboard */,
-				C73124A6208E96EA00DD5AC7 /* Assets.xcassets */,
-				C73124A8208E96EA00DD5AC7 /* LaunchScreen.storyboard */,
-				C73124AB208E96EA00DD5AC7 /* Info.plist */,
-				C73124D0208E9C6900DD5AC7 /* KiipSwiftSample-Bridging-Header.h */,
+				4AD52AE121B0F68C00F64F09 /* AppDelegate.swift */,
+				4AD52AE321B0F68C00F64F09 /* ViewController.swift */,
+				4AD52B1A21B0F92E00F64F09 /* KiipNativeViewController.swift */,
+				4AD52B1C21B0F95400F64F09 /* KiipTableViewController.swift */,
+				4AD52B1E21B1189E00F64F09 /* CustomNotification */,
+				4AD52AE521B0F68C00F64F09 /* Main.storyboard */,
+				4AD52AE821B0F68D00F64F09 /* Assets.xcassets */,
+				4AD52AEA21B0F68D00F64F09 /* LaunchScreen.storyboard */,
+				4AD52AED21B0F68D00F64F09 /* Info.plist */,
 			);
 			path = KiipSwiftSample;
 			sourceTree = "<group>";
 		};
-		C73124B7208E97E700DD5AC7 /* Frameworks */ = {
+		4AD52AF521B0F68D00F64F09 /* KiipSwiftSampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				C73124C4208E983F00DD5AC7 /* CoreTelephony.framework */,
-				C73124C2208E983A00DD5AC7 /* CoreLocation.framework */,
-				C73124C0208E983100DD5AC7 /* SafariServices.framework */,
-				C73124BE208E982B00DD5AC7 /* WebKit.framework */,
-				C73124BC208E982500DD5AC7 /* QuartzCore.framework */,
-				C73124BA208E97EF00DD5AC7 /* AdSupport.framework */,
-				C73124B8208E97E700DD5AC7 /* SystemConfiguration.framework */,
+				4AD52AF621B0F68D00F64F09 /* KiipSwiftSampleTests.swift */,
+				4AD52AF821B0F68D00F64F09 /* Info.plist */,
 			);
-			name = Frameworks;
+			path = KiipSwiftSampleTests;
+			sourceTree = "<group>";
+		};
+		4AD52B0021B0F68D00F64F09 /* KiipSwiftSampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4AD52B0121B0F68D00F64F09 /* KiipSwiftSampleUITests.swift */,
+				4AD52B0321B0F68D00F64F09 /* Info.plist */,
+			);
+			path = KiipSwiftSampleUITests;
+			sourceTree = "<group>";
+		};
+		4AD52B0F21B0F8E600F64F09 /* KiipSDK */ = {
+			isa = PBXGroup;
+			children = (
+				4AD52B1221B0F8FF00F64F09 /* CHANGELOG.md */,
+				4AD52B1121B0F8FE00F64F09 /* KIIPMoatMobileAppKit.framework */,
+				4AD52B1021B0F8FE00F64F09 /* KiipSDK.framework */,
+				4AD52B1321B0F8FF00F64F09 /* KiipSDKResources.bundle */,
+				4AD52B1421B0F8FF00F64F09 /* README.md */,
+			);
+			path = KiipSDK;
+			sourceTree = "<group>";
+		};
+		4AD52B1E21B1189E00F64F09 /* CustomNotification */ = {
+			isa = PBXGroup;
+			children = (
+				4AD52B1F21B118D400F64F09 /* KPCustomNotificationView.swift */,
+			);
+			path = CustomNotification;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C731249B208E96EA00DD5AC7 /* KiipSwiftSample */ = {
+		4AD52ADD21B0F68B00F64F09 /* KiipSwiftSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C73124AE208E96EA00DD5AC7 /* Build configuration list for PBXNativeTarget "KiipSwiftSample" */;
+			buildConfigurationList = 4AD52B0621B0F68D00F64F09 /* Build configuration list for PBXNativeTarget "KiipSwiftSample" */;
 			buildPhases = (
-				C7312498208E96EA00DD5AC7 /* Sources */,
-				C7312499208E96EA00DD5AC7 /* Frameworks */,
-				C731249A208E96EA00DD5AC7 /* Resources */,
-				C73124C8208E98C500DD5AC7 /* Embed Frameworks */,
+				4AD52ADA21B0F68B00F64F09 /* Sources */,
+				4AD52ADB21B0F68B00F64F09 /* Frameworks */,
+				4AD52ADC21B0F68B00F64F09 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -158,84 +187,176 @@
 			);
 			name = KiipSwiftSample;
 			productName = KiipSwiftSample;
-			productReference = C731249C208E96EA00DD5AC7 /* KiipSwiftSample.app */;
+			productReference = 4AD52ADE21B0F68C00F64F09 /* KiipSwiftSample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		4AD52AF121B0F68D00F64F09 /* KiipSwiftSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AD52B0921B0F68D00F64F09 /* Build configuration list for PBXNativeTarget "KiipSwiftSampleTests" */;
+			buildPhases = (
+				4AD52AEE21B0F68D00F64F09 /* Sources */,
+				4AD52AEF21B0F68D00F64F09 /* Frameworks */,
+				4AD52AF021B0F68D00F64F09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AD52AF421B0F68D00F64F09 /* PBXTargetDependency */,
+			);
+			name = KiipSwiftSampleTests;
+			productName = KiipSwiftSampleTests;
+			productReference = 4AD52AF221B0F68D00F64F09 /* KiipSwiftSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4AD52AFC21B0F68D00F64F09 /* KiipSwiftSampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AD52B0C21B0F68D00F64F09 /* Build configuration list for PBXNativeTarget "KiipSwiftSampleUITests" */;
+			buildPhases = (
+				4AD52AF921B0F68D00F64F09 /* Sources */,
+				4AD52AFA21B0F68D00F64F09 /* Frameworks */,
+				4AD52AFB21B0F68D00F64F09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AD52AFF21B0F68D00F64F09 /* PBXTargetDependency */,
+			);
+			name = KiipSwiftSampleUITests;
+			productName = KiipSwiftSampleUITests;
+			productReference = 4AD52AFD21B0F68D00F64F09 /* KiipSwiftSampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C7312494208E96EA00DD5AC7 /* Project object */ = {
+		4AD52AD621B0F68B00F64F09 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = "Kiip, Inc.";
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Kiip;
 				TargetAttributes = {
-					C731249B208E96EA00DD5AC7 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+					4AD52ADD21B0F68B00F64F09 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					4AD52AF121B0F68D00F64F09 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 4AD52ADD21B0F68B00F64F09;
+					};
+					4AD52AFC21B0F68D00F64F09 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 4AD52ADD21B0F68B00F64F09;
 					};
 				};
 			};
-			buildConfigurationList = C7312497208E96EA00DD5AC7 /* Build configuration list for PBXProject "KiipSwiftSample" */;
-			compatibilityVersion = "Xcode 8.0";
+			buildConfigurationList = 4AD52AD921B0F68B00F64F09 /* Build configuration list for PBXProject "KiipSwiftSample" */;
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = C7312493208E96EA00DD5AC7;
-			productRefGroup = C731249D208E96EA00DD5AC7 /* Products */;
+			mainGroup = 4AD52AD521B0F68B00F64F09;
+			productRefGroup = 4AD52ADF21B0F68C00F64F09 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C731249B208E96EA00DD5AC7 /* KiipSwiftSample */,
+				4AD52ADD21B0F68B00F64F09 /* KiipSwiftSample */,
+				4AD52AF121B0F68D00F64F09 /* KiipSwiftSampleTests */,
+				4AD52AFC21B0F68D00F64F09 /* KiipSwiftSampleUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C731249A208E96EA00DD5AC7 /* Resources */ = {
+		4AD52ADC21B0F68B00F64F09 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C73124AA208E96EA00DD5AC7 /* LaunchScreen.storyboard in Resources */,
-				C746F9452098E1860012A81D /* KiipSDKResources.bundle in Resources */,
-				C73124A7208E96EA00DD5AC7 /* Assets.xcassets in Resources */,
-				C73124A5208E96EA00DD5AC7 /* Main.storyboard in Resources */,
+				4AD52B1921B0F8FF00F64F09 /* README.md in Resources */,
+				4AD52AEC21B0F68D00F64F09 /* LaunchScreen.storyboard in Resources */,
+				4AD52AE921B0F68D00F64F09 /* Assets.xcassets in Resources */,
+				4AD52AE721B0F68C00F64F09 /* Main.storyboard in Resources */,
+				4AD52B2221B152E100F64F09 /* logo.png in Resources */,
+				4AD52B1721B0F8FF00F64F09 /* CHANGELOG.md in Resources */,
+				4AD52B1821B0F8FF00F64F09 /* KiipSDKResources.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AD52AF021B0F68D00F64F09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AD52AFB21B0F68D00F64F09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C7312498208E96EA00DD5AC7 /* Sources */ = {
+		4AD52ADA21B0F68B00F64F09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7C1AE862090F1CF00922041 /* KiipTableView.swift in Sources */,
-				C7C1AE882091260C00922041 /* KiipNativeView.swift in Sources */,
-				C73124A2208E96EA00DD5AC7 /* ViewController.swift in Sources */,
-				C73124A0208E96EA00DD5AC7 /* AppDelegate.swift in Sources */,
+				4AD52B1D21B0F95400F64F09 /* KiipTableViewController.swift in Sources */,
+				4AD52B2021B118D400F64F09 /* KPCustomNotificationView.swift in Sources */,
+				4AD52AE421B0F68C00F64F09 /* ViewController.swift in Sources */,
+				4AD52AE221B0F68C00F64F09 /* AppDelegate.swift in Sources */,
+				4AD52B1B21B0F92E00F64F09 /* KiipNativeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AD52AEE21B0F68D00F64F09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AD52AF721B0F68D00F64F09 /* KiipSwiftSampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AD52AF921B0F68D00F64F09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AD52B0221B0F68D00F64F09 /* KiipSwiftSampleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4AD52AF421B0F68D00F64F09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AD52ADD21B0F68B00F64F09 /* KiipSwiftSample */;
+			targetProxy = 4AD52AF321B0F68D00F64F09 /* PBXContainerItemProxy */;
+		};
+		4AD52AFF21B0F68D00F64F09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AD52ADD21B0F68B00F64F09 /* KiipSwiftSample */;
+			targetProxy = 4AD52AFE21B0F68D00F64F09 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		C73124A3208E96EA00DD5AC7 /* Main.storyboard */ = {
+		4AD52AE521B0F68C00F64F09 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C73124A4208E96EA00DD5AC7 /* Base */,
+				4AD52AE621B0F68C00F64F09 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		C73124A8208E96EA00DD5AC7 /* LaunchScreen.storyboard */ = {
+		4AD52AEA21B0F68D00F64F09 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C73124A9208E96EA00DD5AC7 /* Base */,
+				4AD52AEB21B0F68D00F64F09 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -243,7 +364,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C73124AC208E96EA00DD5AC7 /* Debug */ = {
+		4AD52B0421B0F68D00F64F09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -253,10 +374,12 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -264,6 +387,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -291,7 +415,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -300,7 +424,7 @@
 			};
 			name = Debug;
 		};
-		C73124AD208E96EA00DD5AC7 /* Release */ = {
+		4AD52B0521B0F68D00F64F09 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -310,10 +434,12 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -321,6 +447,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -342,78 +469,177 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		C73124AF208E96EA00DD5AC7 /* Debug */ = {
+		4AD52B0721B0F68D00F64F09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2KABBKMT7Y;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				DEVELOPMENT_TEAM = 3883BCEFXL;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../KiipSDK\"";
 				INFOPLIST_FILE = KiipSwiftSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = enterprise.kiip.test.KiipSwiftSample;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiip.kiipSwift.KiipSwiftSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "KiipSwiftSample/KiipSwiftSample-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		C73124B0208E96EA00DD5AC7 /* Release */ = {
+		4AD52B0821B0F68D00F64F09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3883BCEFXL;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../KiipSDK\"";
+				INFOPLIST_FILE = KiipSwiftSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiip.kiipSwift.KiipSwiftSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4AD52B0A21B0F68D00F64F09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2KABBKMT7Y;
-				FRAMEWORK_SEARCH_PATHS = (
+				DEVELOPMENT_TEAM = 3883BCEFXL;
+				INFOPLIST_FILE = KiipSwiftSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				INFOPLIST_FILE = KiipSwiftSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = enterprise.kiip.test.KiipSwiftSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiip.kiipSwift.KiipSwiftSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "KiipSwiftSample/KiipSwiftSample-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KiipSwiftSample.app/KiipSwiftSample";
+			};
+			name = Debug;
+		};
+		4AD52B0B21B0F68D00F64F09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3883BCEFXL;
+				INFOPLIST_FILE = KiipSwiftSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiip.kiipSwift.KiipSwiftSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KiipSwiftSample.app/KiipSwiftSample";
+			};
+			name = Release;
+		};
+		4AD52B0D21B0F68D00F64F09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3883BCEFXL;
+				INFOPLIST_FILE = KiipSwiftSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiip.kiipSwift.KiipSwiftSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KiipSwiftSample;
+			};
+			name = Debug;
+		};
+		4AD52B0E21B0F68D00F64F09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3883BCEFXL;
+				INFOPLIST_FILE = KiipSwiftSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiip.kiipSwift.KiipSwiftSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KiipSwiftSample;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C7312497208E96EA00DD5AC7 /* Build configuration list for PBXProject "KiipSwiftSample" */ = {
+		4AD52AD921B0F68B00F64F09 /* Build configuration list for PBXProject "KiipSwiftSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C73124AC208E96EA00DD5AC7 /* Debug */,
-				C73124AD208E96EA00DD5AC7 /* Release */,
+				4AD52B0421B0F68D00F64F09 /* Debug */,
+				4AD52B0521B0F68D00F64F09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C73124AE208E96EA00DD5AC7 /* Build configuration list for PBXNativeTarget "KiipSwiftSample" */ = {
+		4AD52B0621B0F68D00F64F09 /* Build configuration list for PBXNativeTarget "KiipSwiftSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C73124AF208E96EA00DD5AC7 /* Debug */,
-				C73124B0208E96EA00DD5AC7 /* Release */,
+				4AD52B0721B0F68D00F64F09 /* Debug */,
+				4AD52B0821B0F68D00F64F09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AD52B0921B0F68D00F64F09 /* Build configuration list for PBXNativeTarget "KiipSwiftSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AD52B0A21B0F68D00F64F09 /* Debug */,
+				4AD52B0B21B0F68D00F64F09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AD52B0C21B0F68D00F64F09 /* Build configuration list for PBXNativeTarget "KiipSwiftSampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AD52B0D21B0F68D00F64F09 /* Debug */,
+				4AD52B0E21B0F68D00F64F09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C7312494208E96EA00DD5AC7 /* Project object */;
+	rootObject = 4AD52AD621B0F68B00F64F09 /* Project object */;
 }

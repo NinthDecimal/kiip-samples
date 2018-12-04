@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KiipSwiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,7 +39,7 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="4"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="actionInterstitial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cAU-V6-cDA"/>
+                                                    <action selector="actionInterstitial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7a1-DP-hDt"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhE-mo-qHM">
@@ -93,7 +93,7 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="4"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="actionNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jep-p4-l8e"/>
+                                                    <action selector="actionNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cck-qL-jJQ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20t-Sv-dKO">
@@ -111,7 +111,7 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="4"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="actionCustomNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NEq-qd-pGY"/>
+                                                    <action selector="actionCustomNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N3g-mQ-Hnx"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test Mode: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJh-e0-n3U">
@@ -187,7 +187,7 @@
         <!--Kiip Table View Controller-->
         <scene sceneID="54v-Fh-oZk">
             <objects>
-                <viewController id="Oev-mM-BrO" customClass="KiipTableViewController" customModule="KiipSwiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Oev-mM-BrO" customClass="KiipTableViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hwS-O0-DJK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,7 +202,7 @@
         <!--Kiip Native View Controller-->
         <scene sceneID="2do-T4-O09">
             <objects>
-                <viewController id="Alg-vq-XdK" customClass="KiipNativeViewController" customModule="KiipSwiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Alg-vq-XdK" customClass="KiipNativeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sXF-vS-vJM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
