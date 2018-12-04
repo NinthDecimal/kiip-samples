@@ -2,7 +2,6 @@
 //  KPCustomNotificationView.h
 //  kiip-qa-v3-notification
 //
-//  Created by Daniel on 3/26/18.
 //  Copyright © 2018 Kiip, Inc. All rights reserved.
 //
 

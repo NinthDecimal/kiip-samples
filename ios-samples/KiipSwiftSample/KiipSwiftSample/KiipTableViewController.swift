@@ -2,7 +2,6 @@
 //  KiipTableViewController.swift
 //  KiipSwiftSample
 //
-//  Created by encore on 30/11/18.
 //  Copyright © 2018 Kiip. All rights reserved.
 //
 

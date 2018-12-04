@@ -2,7 +2,6 @@
 //  KiipTableViewController.m
 //  KiipObjCSample
 //
-//  Created by encore on 28/11/18.
 //  Copyright © 2018 Kiip. All rights reserved.
 //
 
@@ -35,7 +34,7 @@
     self.placer = [KPTableView placerWithTableView:self.tableview viewController:self];
     
     [self.view addSubview:self.tableview];
-    [self.placer loadAdsForAdUnitID:@"d"];
+    [self.placer loadAdsForAdUnitID:@"Enter Your Moment ID"];
 
 }
 

@@ -2,7 +2,6 @@
 //  AppDelegate.swift
 //  KiipSwiftSample
 //
-//  Created by encore on 30/11/18.
 //  Copyright © 2018 Kiip. All rights reserved.
 //
 
@@ -14,8 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,KiipDelegate {
 
     var window: UIWindow?
     
-    let KP_APP_KEY = "3b46e5f42299f1697193bb843ed8dbf4"
-    let KP_APP_SECRET = "90c4f68ebb4817b3edf24799b04df22c"
+    let KP_APP_KEY = "Your App Key"          // Interstitial Rewards or Notification Reward
+    let KP_APP_SECRET = "Your App Secret"    // Interstitial Rewards or Notification Reward
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -23,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,KiipDelegate {
         Kiip.initWithAppKey(KP_APP_KEY, andSecret: KP_APP_SECRET)
         Kiip.sharedInstance().delegate = self
         Kiip.sharedInstance().debugMode = true
-        Kiip.sharedInstance().testMode = true
+        Kiip.sharedInstance().testMode = true     //comment this if you wnat to test in production
 
         return true
     }
@@ -47,11 +46,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate,KiipDelegate {
         
     }
     
+    // In order for you to know whether a user got a virtual currency or not, you need this callback to listen for his/her result.
     func kiip(_ kiip: Kiip!, didReceiveContent content: String!, quantity: Int32, transactionId: String!, signature: String!) {
         print("kiip:didReceiveContent:\(content) quantity:\(quantity) transactionId:\(transactionId) signature:\(signature)")
 
     }
     
+    // Video playback listener is here
     func kiipVideoPlaybackDidBegin(_ kiip: Kiip!) {
         print("kiip:kiipVideoPlaybackDidBegin:")
     }

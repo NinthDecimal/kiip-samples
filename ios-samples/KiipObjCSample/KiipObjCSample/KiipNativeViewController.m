@@ -2,7 +2,6 @@
 //  KiipNativeViewController.m
 //  KiipObjCSample
 //
-//  Created by encore on 28/11/18.
 //  Copyright © 2018 Kiip. All rights reserved.
 //
 
@@ -42,7 +41,7 @@
         }
         [poptart showNativeRewardView:self.nativeRewardView];
     };
-    [[Kiip sharedInstance] saveMoment:@"d" withCompletionHandler:handler];
+    [[Kiip sharedInstance] saveMoment:@"Enter Your Moment ID" withCompletionHandler:handler];
 
 }
 

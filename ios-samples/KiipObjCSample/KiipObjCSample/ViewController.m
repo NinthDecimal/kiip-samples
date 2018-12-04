@@ -2,7 +2,6 @@
 //  ViewController.m
 //  KiipObjCSample
 //
-//  Created by encore on 28/11/18.
 //  Copyright © 2018 Kiip. All rights reserved.
 //
 
@@ -40,9 +39,9 @@
         }
         [poptart show];
     };
-    [[Kiip sharedInstance] saveMoment:@"t" withCompletionHandler:handler];
-    
-    // [[Kiip sharedInstance] saveMoment:@"t" withAssetId:nil withCompletionHandler:nil];
+    [[Kiip sharedInstance] saveMoment:@"Enter Your Moment ID" withCompletionHandler:handler];
+    //if you have a specific asset id, try this function.
+    // [[Kiip sharedInstance] saveMoment:@"Enter Your Moment ID" withAssetId:nil withCompletionHandler:nil];
 }
 
 - (IBAction)actionNotification:(id)sender {
@@ -51,9 +50,10 @@
 }
 
 - (IBAction)actionCustomNotification:(id)sender {
+    //In order to use custom notification, first you need to go to your app setting and change the default setting to notification. If not, it will just show the interstitial ad.
     self.customNotificationView = [[KPCustomNotificationView alloc] initWithFrame:CGRectZero];
     [[Kiip sharedInstance] setNotificationView:self.customNotificationView];
-    [[Kiip sharedInstance] saveMoment:@"test" withCompletionHandler:nil];
+    [[Kiip sharedInstance] saveMoment:@"Enter Your Moment ID" withCompletionHandler:nil]; // you can also use a handler here if needed
 }
 
 
@@ -98,6 +98,7 @@
 - (void) didDismissModal:(KPModal *)modal {
     
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

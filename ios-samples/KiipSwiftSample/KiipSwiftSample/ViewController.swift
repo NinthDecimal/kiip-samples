@@ -2,7 +2,6 @@
 //  ViewController.swift
 //  KiipSwiftSample
 //
-//  Created by encore on 30/11/18.
 //  Copyright © 2018 Kiip. All rights reserved.
 //
 
@@ -33,7 +32,7 @@ class ViewController: UIViewController,KPPoptartDelegate,KPModalDelegate {
             poptart?.show()
         }
         
-        Kiip.sharedInstance().saveMoment("t", withCompletionHandler: handler)
+        Kiip.sharedInstance().saveMoment("Enter Your Moment ID", withCompletionHandler: handler)
     }
     
     ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -61,7 +60,7 @@ class ViewController: UIViewController,KPPoptartDelegate,KPModalDelegate {
     
     @IBAction func actionNotification(_ sender: Any) {
         Kiip.sharedInstance().notificationView = nil
-        Kiip.sharedInstance().saveMoment("test", withCompletionHandler: nil)
+        Kiip.sharedInstance().saveMoment("Enter Your Moment ID", withCompletionHandler: nil)
     }
     
     
@@ -69,7 +68,7 @@ class ViewController: UIViewController,KPPoptartDelegate,KPModalDelegate {
         
         customNotificationView = KPCustomNotificationView(frame: CGRect.zero)
         Kiip.sharedInstance().notificationView = customNotificationView
-        Kiip.sharedInstance().saveMoment("test", withCompletionHandler: nil)
+        Kiip.sharedInstance().saveMoment("Enter Your Moment ID", withCompletionHandler: nil)
         
     }
     

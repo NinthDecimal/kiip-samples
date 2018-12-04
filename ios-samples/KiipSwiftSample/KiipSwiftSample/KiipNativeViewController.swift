@@ -2,7 +2,6 @@
 //  KiipNativeViewController.swift
 //  KiipSwiftSample
 //
-//  Created by encore on 30/11/18.
 //  Copyright © 2018 Kiip. All rights reserved.
 //
 
@@ -38,7 +37,7 @@ class KiipNativeViewController: UIViewController,KPPoptartDelegate,KPModalDelega
             }
             poptart?.show(self.nativeRewardView)
         }
-        Kiip.sharedInstance().saveMoment("d", withCompletionHandler: handler)
+        Kiip.sharedInstance().saveMoment("Enter Your Moment ID", withCompletionHandler: handler)
         
     }
     

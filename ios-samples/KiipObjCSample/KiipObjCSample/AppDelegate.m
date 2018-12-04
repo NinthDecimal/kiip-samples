@@ -2,20 +2,16 @@
 //  AppDelegate.m
 //  KiipObjCSample
 //
-//  Created by encore on 28/11/18.
 //  Copyright © 2018 Kiip. All rights reserved.
 //
 
 #import "AppDelegate.h"
 
-#define KP_APP_KEY    @"3b46e5f42299f1697193bb843ed8dbf4"  // Interstitial Rewards
-#define KP_APP_SECRET @"90c4f68ebb4817b3edf24799b04df22c"  // Interstitial Rewards
+#define KP_APP_KEY    @"Your App Key"  // Interstitial Rewards or Notification Reward
+#define KP_APP_SECRET @"Your App Secret"  // Interstitial Rewards or Notification Reward
 
 
-//#define KP_APP_KEY    @"3b46e5f42299f1697193bb843ed8dbf4"  // Notification
-//#define KP_APP_SECRET @"90c4f68ebb4817b3edf24799b04df22c"  // Notification
-
-@interface AppDelegate ()
+@interface AppDelegate () 
 
 @end
 
@@ -28,7 +24,7 @@
 
     [[Kiip sharedInstance] setDelegate:self];
     [[Kiip sharedInstance] setTestMode:YES];
-    [[Kiip sharedInstance] setDebugMode:YES];
+    [[Kiip sharedInstance] setDebugMode:YES];  //comment this if you wnat to test in production
 
     return YES;
 }
@@ -58,10 +54,13 @@
     }
 }
 
+// In order for you to know whether a user got a virtual currency or not, you need this callback to listen for his/her result.
 - (void) kiip:(Kiip *)kiip didReceiveContent:(NSString *)contentId quantity:(int)quantity transactionId:(NSString *)transactionId signature:(NSString *)signature {
     NSLog(@"kiip:didReceiveContent:%@ quantity:%d transactionId:%@ signature:%@", contentId, quantity, transactionId, signature);
 }
 
+
+// Video playback listener is here
 - (void) kiipVideoPlaybackDidBegin:(Kiip *)kiip {
     NSLog(@"kiip:kiipVideoPlaybackDidBegin:");
 }

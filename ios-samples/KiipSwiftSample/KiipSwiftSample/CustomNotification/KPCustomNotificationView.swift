@@ -2,13 +2,14 @@
 //  KPCustomNotificationView.swift
 //  KiipSwiftSample
 //
-//  Created by encore on 30/11/18.
 //  Copyright © 2018 Kiip. All rights reserved.
 //
 
 import UIKit
 import KiipSDK
 
+
+//Example of creating your custom notificaation view
 class KPCustomNotificationView: KPNotificationView {
     
     var background: UIImage?
