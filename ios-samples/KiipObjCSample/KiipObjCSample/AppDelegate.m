@@ -7,8 +7,8 @@
 
 #import "AppDelegate.h"
 
-#define KP_APP_KEY    @"Your App Key"  // Interstitial Rewards or Notification Reward
-#define KP_APP_SECRET @"Your App Secret"  // Interstitial Rewards or Notification Reward
+#define KP_APP_KEY    @"3b46e5f42299f1697193bb843ed8dbf4"  // Interstitial Rewards or Notification Reward
+#define KP_APP_SECRET @"90c4f68ebb4817b3edf24799b04df22c"  // Interstitial Rewards or Notification Reward
 
 
 @interface AppDelegate () 

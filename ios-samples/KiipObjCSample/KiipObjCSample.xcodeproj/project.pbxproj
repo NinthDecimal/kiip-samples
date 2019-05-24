@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A2892C8229817C70048E7B7 /* NativeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A2892C2229817C60048E7B7 /* NativeTableViewCell.xib */; };
+		4A2892C9229817C70048E7B7 /* NativeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2892C3229817C60048E7B7 /* NativeTableViewController.m */; };
+		4A2892CA229817C70048E7B7 /* NativeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2892C4229817C60048E7B7 /* NativeTableViewCell.m */; };
+		4A2892CB229817C70048E7B7 /* NativeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A2892C7229817C70048E7B7 /* NativeTableViewController.xib */; };
+		4A2892CE229818AE0048E7B7 /* KPNativeRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2892CD229818AE0048E7B7 /* KPNativeRecord.m */; };
 		4AA91C1C21AE948600CC7E70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA91C1B21AE948600CC7E70 /* AppDelegate.m */; };
 		4AA91C1F21AE948600CC7E70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA91C1E21AE948600CC7E70 /* ViewController.m */; };
 		4AA91C2221AE948600CC7E70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA91C2021AE948600CC7E70 /* Main.storyboard */; };
@@ -44,6 +49,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A2892C2229817C60048E7B7 /* NativeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeTableViewCell.xib; sourceTree = "<group>"; };
+		4A2892C3229817C60048E7B7 /* NativeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeTableViewController.m; sourceTree = "<group>"; };
+		4A2892C4229817C60048E7B7 /* NativeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeTableViewCell.m; sourceTree = "<group>"; };
+		4A2892C5229817C60048E7B7 /* NativeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeTableViewCell.h; sourceTree = "<group>"; };
+		4A2892C6229817C70048E7B7 /* NativeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeTableViewController.h; sourceTree = "<group>"; };
+		4A2892C7229817C70048E7B7 /* NativeTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeTableViewController.xib; sourceTree = "<group>"; };
+		4A2892CC229818AE0048E7B7 /* KPNativeRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPNativeRecord.h; sourceTree = "<group>"; };
+		4A2892CD229818AE0048E7B7 /* KPNativeRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPNativeRecord.m; sourceTree = "<group>"; };
 		4AA91C1721AE948600CC7E70 /* KiipObjCSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KiipObjCSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA91C1A21AE948600CC7E70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4AA91C1B21AE948600CC7E70 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -130,10 +143,18 @@
 				4AA91C1B21AE948600CC7E70 /* AppDelegate.m */,
 				4AA91C1D21AE948600CC7E70 /* ViewController.h */,
 				4AA91C1E21AE948600CC7E70 /* ViewController.m */,
+				4A2892CC229818AE0048E7B7 /* KPNativeRecord.h */,
+				4A2892CD229818AE0048E7B7 /* KPNativeRecord.m */,
 				4AA91C7121AEB98400CC7E70 /* KiipNativeViewController.h */,
 				4AA91C7221AEB98400CC7E70 /* KiipNativeViewController.m */,
 				4AA91C7421AEB9AC00CC7E70 /* KiipTableViewController.h */,
 				4AA91C7521AEB9AC00CC7E70 /* KiipTableViewController.m */,
+				4A2892C5229817C60048E7B7 /* NativeTableViewCell.h */,
+				4A2892C4229817C60048E7B7 /* NativeTableViewCell.m */,
+				4A2892C2229817C60048E7B7 /* NativeTableViewCell.xib */,
+				4A2892C6229817C70048E7B7 /* NativeTableViewController.h */,
+				4A2892C3229817C60048E7B7 /* NativeTableViewController.m */,
+				4A2892C7229817C70048E7B7 /* NativeTableViewController.xib */,
 				4AA91C6D21AEA58E00CC7E70 /* CustomNotification */,
 				4AA91C2021AE948600CC7E70 /* Main.storyboard */,
 				4AA91C2321AE948800CC7E70 /* Assets.xcassets */,
@@ -289,7 +310,9 @@
 			files = (
 				4ABFB34221AFFEB3000FF546 /* logo.png in Resources */,
 				4AA91C6B21AE962800CC7E70 /* README.md in Resources */,
+				4A2892C8229817C70048E7B7 /* NativeTableViewCell.xib in Resources */,
 				4AA91C2721AE948800CC7E70 /* LaunchScreen.storyboard in Resources */,
+				4A2892CB229817C70048E7B7 /* NativeTableViewController.xib in Resources */,
 				4AA91C6921AE962800CC7E70 /* CHANGELOG.md in Resources */,
 				4AA91C6821AE962800CC7E70 /* KiipSDKResources.bundle in Resources */,
 				4AA91C2421AE948800CC7E70 /* Assets.xcassets in Resources */,
@@ -319,8 +342,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AA91C1F21AE948600CC7E70 /* ViewController.m in Sources */,
+				4A2892CE229818AE0048E7B7 /* KPNativeRecord.m in Sources */,
 				4AA91C7021AEA66B00CC7E70 /* KPCustomNotificationView.m in Sources */,
+				4A2892CA229817C70048E7B7 /* NativeTableViewCell.m in Sources */,
 				4AA91C7321AEB98400CC7E70 /* KiipNativeViewController.m in Sources */,
+				4A2892C9229817C70048E7B7 /* NativeTableViewController.m in Sources */,
 				4AA91C2A21AE948800CC7E70 /* main.m in Sources */,
 				4AA91C7621AEB9AC00CC7E70 /* KiipTableViewController.m in Sources */,
 				4AA91C1C21AE948600CC7E70 /* AppDelegate.m in Sources */,
