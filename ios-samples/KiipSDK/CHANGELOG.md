@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v3.1.0 - 2019-04-26
+* Added a feature to serve survey ads
+* Added callback methods - onDismissByRedemption and onDismissByCancellation - to understand how the ad has been closed.
+* Implemented the IAB's Open Measurement SDK to measure ad viewability
+* Ad loading timeout values can be configured from the app dashboard
+* Bug fixes
+
+
 ## v3.0.3 - 2018-09-04
 * Added a module map
 * Native View fix

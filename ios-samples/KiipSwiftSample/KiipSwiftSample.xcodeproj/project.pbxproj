@@ -14,15 +14,15 @@
 		4AD52AEC21B0F68D00F64F09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AD52AEA21B0F68D00F64F09 /* LaunchScreen.storyboard */; };
 		4AD52AF721B0F68D00F64F09 /* KiipSwiftSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD52AF621B0F68D00F64F09 /* KiipSwiftSampleTests.swift */; };
 		4AD52B0221B0F68D00F64F09 /* KiipSwiftSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD52B0121B0F68D00F64F09 /* KiipSwiftSampleUITests.swift */; };
-		4AD52B1521B0F8FF00F64F09 /* KiipSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD52B1021B0F8FE00F64F09 /* KiipSDK.framework */; };
-		4AD52B1621B0F8FF00F64F09 /* KIIPMoatMobileAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD52B1121B0F8FE00F64F09 /* KIIPMoatMobileAppKit.framework */; };
-		4AD52B1721B0F8FF00F64F09 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 4AD52B1221B0F8FF00F64F09 /* CHANGELOG.md */; };
-		4AD52B1821B0F8FF00F64F09 /* KiipSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4AD52B1321B0F8FF00F64F09 /* KiipSDKResources.bundle */; };
-		4AD52B1921B0F8FF00F64F09 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4AD52B1421B0F8FF00F64F09 /* README.md */; };
 		4AD52B1B21B0F92E00F64F09 /* KiipNativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD52B1A21B0F92E00F64F09 /* KiipNativeViewController.swift */; };
 		4AD52B1D21B0F95400F64F09 /* KiipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD52B1C21B0F95400F64F09 /* KiipTableViewController.swift */; };
 		4AD52B2021B118D400F64F09 /* KPCustomNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD52B1F21B118D400F64F09 /* KPCustomNotificationView.swift */; };
 		4AD52B2221B152E100F64F09 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD52B2121B152E100F64F09 /* logo.png */; };
+		ECFD6A1A22F07EA20082FAB7 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = ECFD6A1522F07EA20082FAB7 /* CHANGELOG.md */; };
+		ECFD6A1B22F07EA20082FAB7 /* KiipSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECFD6A1622F07EA20082FAB7 /* KiipSDK.framework */; };
+		ECFD6A1C22F07EA20082FAB7 /* KiipSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ECFD6A1722F07EA20082FAB7 /* KiipSDKResources.bundle */; };
+		ECFD6A1D22F07EA20082FAB7 /* OMSDK_Kiipme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECFD6A1822F07EA20082FAB7 /* OMSDK_Kiipme.framework */; };
+		ECFD6A1E22F07EA20082FAB7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ECFD6A1922F07EA20082FAB7 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,15 +56,15 @@
 		4AD52AFD21B0F68D00F64F09 /* KiipSwiftSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KiipSwiftSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD52B0121B0F68D00F64F09 /* KiipSwiftSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiipSwiftSampleUITests.swift; sourceTree = "<group>"; };
 		4AD52B0321B0F68D00F64F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4AD52B1021B0F8FE00F64F09 /* KiipSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KiipSDK.framework; path = ../../KiipSDK/KiipSDK.framework; sourceTree = "<group>"; };
-		4AD52B1121B0F8FE00F64F09 /* KIIPMoatMobileAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KIIPMoatMobileAppKit.framework; path = ../../KiipSDK/KIIPMoatMobileAppKit.framework; sourceTree = "<group>"; };
-		4AD52B1221B0F8FF00F64F09 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../../KiipSDK/CHANGELOG.md; sourceTree = "<group>"; };
-		4AD52B1321B0F8FF00F64F09 /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KiipSDKResources.bundle; path = ../../KiipSDK/KiipSDKResources.bundle; sourceTree = "<group>"; };
-		4AD52B1421B0F8FF00F64F09 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../KiipSDK/README.md; sourceTree = "<group>"; };
 		4AD52B1A21B0F92E00F64F09 /* KiipNativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiipNativeViewController.swift; sourceTree = "<group>"; };
 		4AD52B1C21B0F95400F64F09 /* KiipTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiipTableViewController.swift; sourceTree = "<group>"; };
 		4AD52B1F21B118D400F64F09 /* KPCustomNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPCustomNotificationView.swift; sourceTree = "<group>"; };
 		4AD52B2121B152E100F64F09 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		ECFD6A1522F07EA20082FAB7 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		ECFD6A1622F07EA20082FAB7 /* KiipSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KiipSDK.framework; sourceTree = "<group>"; };
+		ECFD6A1722F07EA20082FAB7 /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KiipSDKResources.bundle; sourceTree = "<group>"; };
+		ECFD6A1822F07EA20082FAB7 /* OMSDK_Kiipme.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OMSDK_Kiipme.framework; sourceTree = "<group>"; };
+		ECFD6A1922F07EA20082FAB7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AD52B1521B0F8FF00F64F09 /* KiipSDK.framework in Frameworks */,
-				4AD52B1621B0F8FF00F64F09 /* KIIPMoatMobileAppKit.framework in Frameworks */,
+				ECFD6A1D22F07EA20082FAB7 /* OMSDK_Kiipme.framework in Frameworks */,
+				ECFD6A1B22F07EA20082FAB7 /* KiipSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				4AD52B2121B152E100F64F09 /* logo.png */,
-				4AD52B0F21B0F8E600F64F09 /* KiipSDK */,
+				ECFD6A1422F07EA20082FAB7 /* KiipSDK */,
 				4AD52AE021B0F68C00F64F09 /* KiipSwiftSample */,
 				4AD52AF521B0F68D00F64F09 /* KiipSwiftSampleTests */,
 				4AD52B0021B0F68D00F64F09 /* KiipSwiftSampleUITests */,
@@ -150,24 +150,25 @@
 			path = KiipSwiftSampleUITests;
 			sourceTree = "<group>";
 		};
-		4AD52B0F21B0F8E600F64F09 /* KiipSDK */ = {
-			isa = PBXGroup;
-			children = (
-				4AD52B1221B0F8FF00F64F09 /* CHANGELOG.md */,
-				4AD52B1121B0F8FE00F64F09 /* KIIPMoatMobileAppKit.framework */,
-				4AD52B1021B0F8FE00F64F09 /* KiipSDK.framework */,
-				4AD52B1321B0F8FF00F64F09 /* KiipSDKResources.bundle */,
-				4AD52B1421B0F8FF00F64F09 /* README.md */,
-			);
-			path = KiipSDK;
-			sourceTree = "<group>";
-		};
 		4AD52B1E21B1189E00F64F09 /* CustomNotification */ = {
 			isa = PBXGroup;
 			children = (
 				4AD52B1F21B118D400F64F09 /* KPCustomNotificationView.swift */,
 			);
 			path = CustomNotification;
+			sourceTree = "<group>";
+		};
+		ECFD6A1422F07EA20082FAB7 /* KiipSDK */ = {
+			isa = PBXGroup;
+			children = (
+				ECFD6A1522F07EA20082FAB7 /* CHANGELOG.md */,
+				ECFD6A1622F07EA20082FAB7 /* KiipSDK.framework */,
+				ECFD6A1722F07EA20082FAB7 /* KiipSDKResources.bundle */,
+				ECFD6A1822F07EA20082FAB7 /* OMSDK_Kiipme.framework */,
+				ECFD6A1922F07EA20082FAB7 /* README.md */,
+			);
+			name = KiipSDK;
+			path = ../KiipSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,13 +275,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AD52B1921B0F8FF00F64F09 /* README.md in Resources */,
 				4AD52AEC21B0F68D00F64F09 /* LaunchScreen.storyboard in Resources */,
+				ECFD6A1A22F07EA20082FAB7 /* CHANGELOG.md in Resources */,
 				4AD52AE921B0F68D00F64F09 /* Assets.xcassets in Resources */,
+				ECFD6A1E22F07EA20082FAB7 /* README.md in Resources */,
+				ECFD6A1C22F07EA20082FAB7 /* KiipSDKResources.bundle in Resources */,
 				4AD52AE721B0F68C00F64F09 /* Main.storyboard in Resources */,
 				4AD52B2221B152E100F64F09 /* logo.png in Resources */,
-				4AD52B1721B0F8FF00F64F09 /* CHANGELOG.md in Resources */,
-				4AD52B1821B0F8FF00F64F09 /* KiipSDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
